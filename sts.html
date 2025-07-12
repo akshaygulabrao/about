@@ -30,10 +30,10 @@
 
 <section id="abstract">
     <h2>Abstract</h2>
-    <p>The increasing sophistication of natural language processing (NLP) and machine learning technologies has opened new frontiers for information extraction and alpha generation in financial markets. This paper explores the potential of using speech-to-text models from subject matter experts (SMEs) as a unique source of investment insights and potential market alpha. By systematically analyzing expert discourse, investors can potentially uncover nuanced information not readily available through traditional financial reporting mechanisms.</p>
+    <p>The increasing capabilities of natural language processing (NLP) and machine learning technologies has opened new frontiers for information extraction and alpha generation in financial markets. This paper explores the potential of using speech-to-text models from subject matter experts as a unique source of investment insights and potential market alpha. By utilizing Speech-to-Text models in conjunction with Large Language Models, it's possible to synthesize large amounts of unique information in a short amount of tie. </p>
 </section>
 
-<section id="introduction">
+<section>
     <h2>1. Introduction</h2>
     <p>Financial markets have traditionally relied on structured data sources such as financial statements, press releases, and market reports. However, the advent of advanced NLP technologies presents an opportunity to extract valuable insights from less conventional information sources, particularly expert speech.</p>
     
@@ -42,29 +42,22 @@
     <p>Traditional financial theory suggests that superior investment returns (alpha) can be achieved by accessing and interpreting information more effectively than market participants. Speech-to-text models from SMEs represent a potential mechanism for reducing information asymmetry.</p>
 </section>
 
-<section id="methodology">
+<section>
     <h2>2. Methodology</h2>
-    <h3>2.1 Data Collection</h3>
-    <p>Data collection involves gathering audio/video content from multiple sources:</p>
-    <ul>
-        <li>Earnings calls</li>
-        <li>Industry conferences</li>
-        <li>Academic presentations</li>
-        <li>Expert interviews</li>
-        <li>Podcasts and webinars</li>
-    </ul>
+    <p>Data collection involves gathering content from Youtube. The data collection involves 2 main steps: audio collection and speech-to-text processing, knowledge building. In audio collection, we fetch all the audio content for a specific video. In speech-to-text processing, we utilize a STS machine learning model to convert the audio clippings into a transcript. After the transcript is made, we pass the transcript through a LLM for content indexing.</p>
 
-    <h3>2.2 Technical Framework</h3>
-    <p>The technical approach includes:</p>
-    <ul>
-        <li>Speech-to-text conversion using advanced models</li>
-        <li>Natural language processing techniques</li>
-        <li>Sentiment analysis</li>
-        <li>Contextual information extraction</li>
-    </ul>
+    <p>I'm using the python library <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> to capture the audio content of any arbitrary youtube video. It works by headlessly simulating a browser that is watching the given youtube video. YouTube works by sending over small chunks of the video if a user is watching it. By iteratively requesting all the chunks with a given timeout, it is possible to watch the entire video. The video chunks are then assembled via <a href="https://ffmpeg.org/">ffmpeg</a>.</p>
+
+    <p>The next step is to utilize speech-to-text models to process the the information into a text, an even higher signal-to-noise ratio communication avenue. However, there are a few issues that need to be addressed when using this method. Feeding the audio chunks into an LLM is a non-trivial task. I use <a href="https://github.com/openai/whisper?ref=blog.duy.dev">OpenAI's Whisper</a> tool to generate the transcripts. </p>
+
+    <p>Then we utilize LLMs to parse the information. Parsing the information consists of recording when information is said. This is important because contradictions in information should always side with the latest update. Then making sure what was said is actually unique. If it's unique, create a new opinion. If it's not unique, then we update the opinion. Lastly, we whenever a price is mentioned, we must find the ticker and update it with the corresponding buy-sell.</p>
+
+    <p>Essentially, we want to write </p>
+
+    
 </section>
 
-<section id="technical-components">
+<section>
     <h2>3. Technical Components</h2>
     <h3>3.1 Speech Recognition Models</h3>
     <p>Key technologies include:</p>
@@ -103,7 +96,7 @@
     </ul>
 </section>
 
-<section id="conclusion">
+<section>
     <h2>Conclusion</h2>
     <p>This research demonstrates the promising potential of speech-to-text technologies in generating financial market insights. By leveraging advanced NLP and machine learning, investors can potentially uncover unique informational advantages.</p>
 </section>
