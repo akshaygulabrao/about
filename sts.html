@@ -26,80 +26,41 @@
     <a href="./index.html">Home</a>
 </header>
 
-<h1>Leveraging Subject Matter Expert Speech-to-Text Models as a Novel Alpha Generation Strategy in Financial Markets</h1>
+<h1>Leveraging youtube for financial insights</h1>
+<p>I'm currently using yt-dlp, whisper, and 3-small to listen to everything that Martin Shkreli says. The 3-small goes into a sqlite3 database which I use for retrieving before feeding it to an LLM.</p>
 
-<section id="abstract">
-    <h2>Abstract</h2>
-    <p>The increasing capabilities of natural language processing (NLP) and machine learning technologies has opened new frontiers for information extraction and alpha generation in financial markets. This paper explores the potential of using speech-to-text models from subject matter experts as a unique source of investment insights and potential market alpha. By utilizing Speech-to-Text models in conjunction with Large Language Models, it's possible to synthesize large amounts of unique information in a short amount of tie. </p>
-</section>
+<p>Currently, the embedding database is stored locally and everything else is done through runpod.io.</p>
+<ul>
+    <li>yt-dlp</li>
+    <li>whisper</li>
+    <li>3-small</li>
+    <li>llm cli tool</li>
+    <li>runpod.io</li>
+</ul>
 
-<section>
-    <h2>1. Introduction</h2>
-    <p>Financial markets have traditionally relied on structured data sources such as financial statements, press releases, and market reports. However, the advent of advanced NLP technologies presents an opportunity to extract valuable insights from less conventional information sources, particularly expert speech.</p>
-    
-    <p>This study aims to investigate the potential of using speech-to-text models from subject matter experts as a novel approach to generating investment alpha, exploring both the methodological framework and potential implementation strategies.</p>
-    
-    <p>Traditional financial theory suggests that superior investment returns (alpha) can be achieved by accessing and interpreting information more effectively than market participants. Speech-to-text models from SMEs represent a potential mechanism for reducing information asymmetry.</p>
-</section>
+<h2>Components</h2>
+<h3>yt-dlp</h3>
+<a href="git@github.com:yt-dlp/yt-dlp.git">Yt-dlp</a> downloads youtube videos by simulating a browser with all relevant cookies, rotating proxies to avoid IP bans and making the exact same API calls that would be used to watch a youtube video online. However, this might not be a stable solution for very long due because they might start requesting a proof-of-origin tag.
 
-<section>
-    <h2>2. Methodology</h2>
-    <p>Data collection involves gathering content from Youtube. The data collection involves 2 main steps: audio collection and speech-to-text processing, knowledge building. In audio collection, we fetch all the audio content for a specific video. In speech-to-text processing, we utilize a STS machine learning model to convert the audio clippings into a transcript. After the transcript is made, we pass the transcript through a LLM for content indexing.</p>
+<h3>Whisper</h3>
 
-    <p>I'm using the python library <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> to capture the audio content of any arbitrary youtube video. It works by headlessly simulating a browser that is watching the given youtube video. YouTube works by sending over small chunks of the video if a user is watching it. By iteratively requesting all the chunks with a given timeout, it is possible to watch the entire video. The video chunks are then assembled via <a href="https://ffmpeg.org/">ffmpeg</a>.</p>
+<p>Whisper is an open-source model by OpenAI for speech-to-text. I currently use it to convert the raw audio from the YouTube video to a vtt transcript.</p>
 
-    <p>The next step is to utilize speech-to-text models to process the the information into a text, an even higher signal-to-noise ratio communication avenue. However, there are a few issues that need to be addressed when using this method. Feeding the audio chunks into an LLM is a non-trivial task. I use <a href="https://github.com/openai/whisper?ref=blog.duy.dev">OpenAI's Whisper</a> tool to generate the transcripts. </p>
+<p>In the future, I may move away from this because it may be simpler to just use an API.</p>
 
-    <p>Then we utilize LLMs to parse the information. Parsing the information consists of recording when information is said. This is important because contradictions in information should always side with the latest update. Then making sure what was said is actually unique. If it's unique, create a new opinion. If it's not unique, then we update the opinion. Lastly, we whenever a price is mentioned, we must find the ticker and update it with the corresponding buy-sell.</p>
+<h3>Runpod</h3>
 
-    <p>Essentially, we want to write </p>
+<p>Runpod.io is currently used for 2 things: downloading the video and running Whisper. I don't think this is a good idea long term, because I want my research to be about making the dataset. I want there to be as little as technical innovation in every other area.</p>
 
-    
-</section>
+<h3>3-small</h3>
+3-small is an embedding model from openAI's official API. This is probably my biggest cost. I should proabably move away from this as quickly as possible. It costs me a relavitvely small amount still though, maybe .01 cents each day.
 
-<section>
-    <h2>3. Technical Components</h2>
-    <h3>3.1 Speech Recognition Models</h3>
-    <p>Key technologies include:</p>
-    <ul>
-        <li>Transformer-based models (Whisper, DeepSpeech)</li>
-        <li>Domain-specific fine-tuning</li>
-        <li>Multi-language support</li>
-    </ul>
+<h3>llm-cli tool</h3>
 
-    <h3>3.2 Natural Language Processing</h3>
-    <p>NLP techniques encompass:</p>
-    <ul>
-        <li>Named entity recognition</li>
-        <li>Sentiment analysis</li>
-        <li>Topic modeling</li>
-        <li>Contextual understanding</li>
-    </ul>
-</section>
+command line tool created by simonw. Really good documentation. simple to use.
 
-<section id="alpha-generation">
-    <h2>4. Alpha Generation Mechanisms</h2>
-    <h3>4.1 Linguistic Signals</h3>
-    <p>Potential alpha generation through:</p>
-    <ul>
-        <li>Tone and sentiment variations</li>
-        <li>Subtle linguistic nuances</li>
-        <li>Comparative analysis across expert sources</li>
-    </ul>
-
-    <h3>4.2 Information Asymmetry</h3>
-    <p>Advantages include:</p>
-    <ul>
-        <li>Early detection of emerging trends</li>
-        <li>Implicit market signals</li>
-        <li>Contextual understanding beyond traditional metrics</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Conclusion</h2>
-    <p>This research demonstrates the promising potential of speech-to-text technologies in generating financial market insights. By leveraging advanced NLP and machine learning, investors can potentially uncover unique informational advantages.</p>
-</section>
-
+<h2>Data</h2>
+<p>Obviously, I want my main contribution to be the data and whisper model finetuning methods. Perhaps not using a transcript API would be useful after all.</p>
+<p></p>
 </body>
 </html>
