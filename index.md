@@ -5,7 +5,7 @@ Computer Vision Engineer with extensive experience in machine learning, web scra
 - BS Computer Engineering  
 - MS Computer Science  
 
-This website is built with raw html because LLMs can write most of the boilerplate, significantly reducing project complexity. Most static site generators introduce too much complexity.
+This website is built with markdown files and a pandoc build script. Most static site generators introduce too much complexity.
 
 Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com)
 
