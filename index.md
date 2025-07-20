@@ -21,7 +21,7 @@ My curiosities, but less polished than research.
 What I'm currently curious about.
 
 - [The Macroeconomics of Healthcare](./healthcare.html)  
-- [A list of interesting biology topics](./o2.html)
+- [What MCAT students have to learn](./o2.html)
 
 ---
 

@@ -1,3 +1,7 @@
+[Home](./index.html)
+
+Akshay Gulabrao 11 July 2025
+
 # Leveraging Speech-to-Text Models for Financial Insights  
 Experts in their field routinely publish podcasts on YouTube. Speech-to-Text models may prove to be a useful tool to efficiently bring their insights to the stock market. In this paper, I introduce a pipeline that can be used to bring financial insights to the stock market in an efficient manner, using Martin Shkreli, a biotech expert as an example.
 

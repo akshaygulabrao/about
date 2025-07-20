@@ -1,7 +1,8 @@
-# Healthcare from a Macroeconomic Perspective
-*Akshay Gulabrao, 11 July 2025*
-
 [Home](./index.html)
+
+Akshay Gulabrao 11 July 2025
+
+# Healthcare from a Macroeconomic Perspective
 
 17.6 % of the GDP was health spending in 2023. Medicare spent 8.1 % and Medicaid spent 7.9 %. In all, health spending was **$4.9 trillion**, or **$14,570 per person**[^4]. In 2023, the federal government spent **$848 billion** on healthcare[^1]. For some context, the US government makes about **$4.67 trillion** in revenue as a combination of income tax, social security and medicare taxes, and corporate taxes[^2]. https://en.wikipedia.org/wiki/Medicare_(United_States)
 
@@ -14,7 +15,6 @@ An unintended consequence of the Affordable Care Act (ACA) is the monotonically 
 - **Government** spends as little taxpayer money as possible while providing access to care for America's most vulnerable populations.
 - **Pharmaceutical manufacturers** must generate enough income to earn a profit after recouping R&D and marketing costs.
 
-[^1] **Medicare** is a federal health insurance for people 65 and older. **Medicaid** is designed to meet the needs of low-income individuals and families.
 
 ## References
 
