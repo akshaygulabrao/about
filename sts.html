@@ -1,66 +1,92 @@
-<!doctype html>
-<html lang="en-US" dir="ltr">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h1, h2 {
-    color: #333;
-  }
-  section {
-    margin-bottom: 20px;
-  }
-</style>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <title>Speech-to-Text Alpha Generation Research</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research on leveraging speech-to-text models for financial market alpha generation">
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>sts</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-    <a href="./index.html">Home</a>
-</header>
-
-<h1>Leveraging youtube for financial insights</h1>
-<p>I'm currently using yt-dlp, whisper, and 3-small to listen to everything that Martin Shkreli says. The 3-small goes into a sqlite3 database which I use for retrieving before feeding it to an LLM.</p>
-
-<p>Currently, the embedding database is stored locally and everything else is done through runpod.io.</p>
+<h1
+id="leveraging-speech-to-text-models-for-financial-insights">Leveraging
+Speech-to-Text Models for Financial Insights</h1>
+<p>Experts in their field routinely publish podcasts on YouTube.
+Speech-to-Text models may prove to be a useful tool to efficiently bring
+their insights to the stock market. In this paper, I introduce a
+pipeline that can be used to bring financial insights to the stock
+market in an efficient manner, using Martin Shkreli, a biotech expert as
+an example.</p>
+<hr />
+<h2 id="leveraging-youtube-for-financial-insights">Leveraging YouTube
+for Financial Insights</h2>
+<p>I’m currently using <strong>yt-dlp</strong>,
+<strong>Whisper</strong>, and <strong>text-embedding-3-small</strong> to
+listen to everything Martin Shkreli says. The 3-small embeddings go into
+a <strong>SQLite3</strong> database that I query before feeding the text
+to an LLM.</p>
 <ul>
-    <li>yt-dlp</li>
-    <li>whisper</li>
-    <li>3-small</li>
-    <li>llm cli tool</li>
-    <li>runpod.io</li>
+<li><strong>yt-dlp</strong><br />
+</li>
+<li><strong>Whisper</strong><br />
+</li>
+<li><strong>text-embedding-3-small</strong><br />
+</li>
+<li><strong>llm CLI tool</strong> (by Simon Willison)<br />
+</li>
+<li><strong>Runpod.io</strong></li>
 </ul>
-
-<h2>Components</h2>
-<h3>yt-dlp</h3>
-<a href="git@github.com:yt-dlp/yt-dlp.git">Yt-dlp</a> downloads youtube videos by simulating a browser with all relevant cookies, rotating proxies to avoid IP bans and making the exact same API calls that would be used to watch a youtube video online. However, this might not be a stable solution for very long due because they might start requesting a proof-of-origin tag.
-
-<h3>Whisper</h3>
-
-<p>Whisper is an open-source model by OpenAI for speech-to-text. I currently use it to convert the raw audio from the YouTube video to a vtt transcript.</p>
-
-<p>In the future, I may move away from this because it may be simpler to just use an API.</p>
-
-<h3>Runpod</h3>
-
-<p>Runpod.io is currently used for 2 things: downloading the video and running Whisper. I don't think this is a good idea long term, because I want my research to be about making the dataset. I want there to be as little as technical innovation in every other area.</p>
-
-<h3>3-small</h3>
-3-small is an embedding model from openAI's official API. This is probably my biggest cost. I should proabably move away from this as quickly as possible. It costs me a relavitvely small amount still though, maybe .01 cents each day.
-
-<h3>llm-cli tool</h3>
-
-command line tool created by simonw. Really good documentation. simple to use.
-
-<h2>Data</h2>
-<p>Obviously, I want my main contribution to be the data and whisper model finetuning methods. Perhaps not using a transcript API would be useful after all.</p>
-<p></p>
+<hr />
+<h2 id="components">Components</h2>
+<h3 id="yt-dlp">yt-dlp</h3>
+<p><a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> downloads
+YouTube videos by simulating a browser with all relevant cookies,
+rotating proxies to avoid IP bans, and making the exact same API calls
+that would be used to watch a YouTube video online.<br />
+⚠️ This may not be a stable solution for very long; YouTube could start
+requiring a proof-of-origin tag.</p>
+<h3 id="whisper">Whisper</h3>
+<p>OpenAI’s open-source speech-to-text model. I use it to convert the
+raw audio from each YouTube video into a <code>.vtt</code>
+transcript.<br />
+Future work: I may switch to a hosted API to reduce operational
+overhead.</p>
+<h3 id="runpod.io">Runpod.io</h3>
+<p>Currently used for two things:<br />
+1. Downloading the video.<br />
+2. Running Whisper.</p>
+<p>I don’t think this is a good long-term choice; I want my research to
+focus on <strong>building the dataset</strong>, not on infrastructure
+innovation.</p>
+<h3 id="text-embedding-3-small">text-embedding-3-small</h3>
+<p>OpenAI’s official embedding model. This is my biggest cost
+driver—roughly <strong>$0.01 per day</strong> at current volume. I
+should migrate away from it as soon as possible.</p>
+<h3 id="llm-cli-tool">llm CLI tool</h3>
+<p>A command-line tool created by <a
+href="https://github.com/simonw/llm">Simon Willison</a>. Excellent
+documentation and dead-simple to use.</p>
+<hr />
+<h2 id="data">Data</h2>
+<p>My main contribution should be <strong>the dataset itself</strong>
+and <strong>Whisper fine-tuning methods</strong>. Avoiding a transcript
+API might still be worthwhile to maintain full control over the
+pipeline.</p>
 </body>
 </html>
