@@ -20,75 +20,90 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <p><a href="./index.html">Home</a></p>
 <p>Akshay Gulabrao 11 July 2025</p>
-<h1
-id="leveraging-speech-to-text-models-for-financial-insights">Leveraging
-Speech-to-Text Models for Financial Insights</h1>
-<p>Experts in their field routinely publish podcasts on YouTube.
-Speech-to-Text models may prove to be a useful tool to efficiently bring
-their insights to the stock market. In this paper, I introduce a
-pipeline that can be used to bring financial insights to the stock
-market in an efficient manner, using Martin Shkreli, a biotech expert as
-an example.</p>
-<hr />
-<h2 id="leveraging-youtube-for-financial-insights">Leveraging YouTube
-for Financial Insights</h2>
-<p>I’m currently using <strong>yt-dlp</strong>,
-<strong>Whisper</strong>, and <strong>text-embedding-3-small</strong> to
-listen to everything Martin Shkreli says. The 3-small embeddings go into
-a <strong>SQLite3</strong> database that I query before feeding the text
-to an LLM.</p>
-<ul>
-<li><strong>yt-dlp</strong><br />
-</li>
-<li><strong>Whisper</strong><br />
-</li>
-<li><strong>text-embedding-3-small</strong><br />
-</li>
-<li><strong>llm CLI tool</strong> (by Simon Willison)<br />
-</li>
-<li><strong>Runpod.io</strong></li>
-</ul>
-<hr />
-<h2 id="components">Components</h2>
-<h3 id="yt-dlp">yt-dlp</h3>
-<p><a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> downloads
-YouTube videos by simulating a browser with all relevant cookies,
-rotating proxies to avoid IP bans, and making the exact same API calls
-that would be used to watch a YouTube video online.<br />
-⚠️ This may not be a stable solution for very long; YouTube could start
-requiring a proof-of-origin tag.</p>
-<h3 id="whisper">Whisper</h3>
-<p>OpenAI’s open-source speech-to-text model. I use it to convert the
-raw audio from each YouTube video into a <code>.vtt</code>
-transcript.<br />
-Future work: I may switch to a hosted API to reduce operational
-overhead.</p>
-<h3 id="runpod.io">Runpod.io</h3>
-<p>Currently used for two things:<br />
-1. Downloading the video.<br />
-2. Running Whisper.</p>
-<p>I don’t think this is a good long-term choice; I want my research to
-focus on <strong>building the dataset</strong>, not on infrastructure
-innovation.</p>
-<h3 id="text-embedding-3-small">text-embedding-3-small</h3>
-<p>OpenAI’s official embedding model. This is my biggest cost
-driver—roughly <strong>$0.01 per day</strong> at current volume. I
-should migrate away from it as soon as possible.</p>
-<h3 id="llm-cli-tool">llm CLI tool</h3>
-<p>A command-line tool created by <a
-href="https://github.com/simonw/llm">Simon Willison</a>. Excellent
-documentation and dead-simple to use.</p>
-<hr />
-<h2 id="data">Data</h2>
-<p>My main contribution should be <strong>the dataset itself</strong>
-and <strong>Whisper fine-tuning methods</strong>. Avoiding a transcript
-API might still be worthwhile to maintain full control over the
-pipeline.</p>
+<h1 id="domain-specific-speech-recognition">Domain Specific Speech
+Recognition</h1>
+<p>Speech recognition helps aggregate large amounts of audio into
+actionable insight. One of the problems with speech recognition is that
+words are highly contextual. In highly technical domains, models still
+tend to misinterpret the meaning of words for their far more commonplace
+counterparts. Here I investigate the quality of transcription of Martin
+Shkreli’s pharmaceutical/financial youtube videos with respect to
+different API providers and use OpenAI’s whisper as a control.</p>
+<h2 id="the-test">The test</h2>
+<p>I have uploaded an audio file of martin shkreli’s stream to <a
+href="">gd</a>. I used the following openai whisper command:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">whisper</span> audio.wav <span class="at">--model</span> medium <span class="at">--language</span> en <span class="at">--word_timestamps</span> True <span class="at">-f</span> vtt</span></code></pre></div>
 </body>
 </html>
