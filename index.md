@@ -11,11 +11,6 @@ I am usually willing to buy/sell anything. Reachable at [aksgula22@gmail.com](ma
 
 ---
 
-## Current Projects
-- [LiDAR Odometry](./lio.html) - 19 July 2025
-- [Domain Specific Speech Recognition](./sts.html) - 20 July 2025
-- [Algorithmic Trading](./algo.html)
-
 ## Blog
 
 - [macOS ROS1 Setup](./ros_macos.html)
