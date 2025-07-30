@@ -1,6 +1,6 @@
 # Akshay Gulabrao
 
-Computer Vision Engineer with extensive experience in machine learning, web scraping, and AI-assisted tool use. Hobbies include market making and chess.
+Becoming a nurse because computer science isn't profitable anymore. Ex-computer Vision Engineer with extensive experience in machine learning, web scraping, and AI-assisted tool use. Hobbies include market making and chess.
 
 - BS Computer Engineering  
 - MS Computer Science  
