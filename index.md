@@ -15,17 +15,3 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 
 - [Why I'm switching from AI to Nursing](./nursing.html)
 - [macOS ROS1 Setup](./ros_macos.html)
-
-## Notes
-Randomly useful and what I think is wisdom
-
-- [The Macroeconomics of Healthcare](./healthcare.html)
-- [What MCAT students have to learn](./o2.html)
-
-
----
-
-### Links
-- [The Big Beautiful Bill Raw Text](https://www.congress.gov/119/bills/hr1/BILLS-119hr1enr.xml)
-
----
