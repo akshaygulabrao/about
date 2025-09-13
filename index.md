@@ -12,6 +12,6 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 ---
 
 ## Blog
+- [DeepFake Synthesis](./deepfake.html)
 - [I'm a mediocre writer](./identity.html)
 - [Why I'm switching from AI to Nursing](./nursing.html)
-- [macOS ROS1 Setup](./ros_macos.html)
