@@ -1,6 +1,6 @@
 # Akshay Gulabrao
 
-Becoming a nurse because computer science isn't profitable anymore. Ex-computer Vision Engineer with extensive experience in machine learning, web scraping, and AI-assisted tool use. Hobbies include market making and chess.
+Becoming a nurse because deep learning is actually really hard to monetize. Ex-computer Vision Engineer with extensive experience in machine learning, web scraping, and AI-assisted tool use. Hobbies include market making and chess.
 
 - BS Computer Engineering  
 - MS Computer Science  
@@ -12,6 +12,7 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 ---
 
 ## Blog
+- [Voice synthesis](./voice_fake.html)
 - [DeepFake Synthesis](./deepfake.html)
 - [I'm a mediocre writer](./identity.html)
 - [Why I'm switching from AI to Nursing](./nursing.html)
