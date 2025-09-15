@@ -10,15 +10,20 @@ Voice synthesis refers to the deep learning task of converting one voice speakin
 
 Reading the introduction to they paper, the papers they cite mainly involve TTS speech synthesis, however, I'm mainly interested in speech to speech synthesis. An arxive search of speech synthesis yielded the interesting paper by Quamer et al. [^2] The author uses the CommonVoice dataset.[^3]
 
-I also looked into the Pureformer VC [^4]. Let's start with VCTK. A huggingface dataset already exists for this, so it should be quite simple with the dataloader. 
+Another interesting paper that I found by Luo et al. innovates on a codec framework with a subspace orthogonal projection module that splits the input into 2 subspaces where 1 correlates to speech and another correlates to the background. 
+
 
 ## Blog
 
-9/13/2025: Didn't get much done today. Wrote the intro and maybe a paragraph. Downloaded common voice. Decided I'm going to start trying to get a job in ML again (even though its probably hopeless). Commonvoice is still getting parsed. Looking at tinygrad and trying to get a codebase that works for me. Will probably involve using torch for the auxillary utils and tinygrad for the core. Or maybe even start my own library. In fact tomorrow, I'll probably start my own library that just imports tinygrad.
 
-9/14/2025: Downloading the data is taking an absurdly long time. If this finishes, my first task is to make downloading the data and building the data loader significantly faster. I find it horrible that the Open Voice dataset does nothing to advertise the length of the dataset, and they only advertise the number of clips. It took over 30 minutes just to list all the clips. There are approximately 2.5 million clips. You can use the first digit of the clip as the heuristic for how close it is to being done, since it processes them in alphabetical order. I really want to have this published on huggingface to make it faster for everyone else. If I can do that, then these entire 2 days won't have been a waste. Someone in the future will be able to quickly download and start training on this data. This was a bad idea. I should have stuck to a proof of concept first. I don't have the resources to train it even if I could download it. 
+**September 14, 2025**
+Downloading and indexing the Open Voice dataset was extremely slow—listing all ~2.5 million clips took over 30 minutes. Since clips are processed alphabetically, I used the first digit of the clip name as a rough progress indicator. The dataset only advertises clip count, not size or download time, which makes planning difficult. I ended up switching to a smaller dataset due to resource constraints. I plan to publish a preprocessed version on Hugging Face to make it easier for others to use.
+
+**September 13, 2025**
+Downloaded Common Voice and started drafting the intro. Parsing is still in progress. I’ve been exploring Tinygrad as a core framework, possibly using PyTorch for utilities. I might build a small wrapper library around Tinygrad to streamline experimentation.
 
 [^1]: Azzuni et al. [Voice Cloning: A Comprehensive Survey.](https://arxiv.org/pdf/2505.00579) 2025. arxiv. 
 [^2]: Quamer et al. [DarkStream: real-time speech anonymization with low latency](https://arxiv.org/pdf/2509.04667) 2025. arxiv.
 [^3]: Ardila, R., Branson, M., Davis, K., Henretty, M., Kohler, M., Meyer, J., Morais, R., Saunders, L., Tyers, F. M. and Weber, G. (2020) [Common Voice: A Massively-Multilingual Speech Corpus](https://arxiv.org/pdf/1912.06670). Proceedings of the 12th Conference on Language Resources and Evaluation (LREC 2020). pp. 4211—4215
-[^4]: Wenhan Yao, Fen Xiao, Xiarun Chen, Jia Liu, YongQiang He, Weiping Wen. [Pureformer-VC: Non-parallel Voice Conversion with Pure Stylized Transformer Blocks and Triplet Discriminative Training](https://arxiv.org/pdf/2506.08348). IJCNN2025. 
+[^4]: Wenhan Yao, Fen Xiao, Xiarun Chen, Jia Liu, YongQiang He, Weiping Wen. [Pureformer-VC: Non-parallel Voice Conversion with Pure Stylized Transformer Blocks and Triplet Discriminative Training](https://arxiv.org/pdf/2506.08348). IJCNN2025.
+[^5]: [babyvedat/VCTK](https://huggingface.co/datasets/badayvedat/VCTK)

@@ -1,6 +1,6 @@
 # Akshay Gulabrao
 
-Becoming a nurse because deep learning is actually really hard to monetize. Ex-computer Vision Engineer with extensive experience in machine learning, web scraping, and AI-assisted tool use. Hobbies include market making and chess.
+Becoming a nurse because deep learning is hard to monetize. Ex-computer Vision Engineer with extensive experience in machine learning, web scraping, and AI-assisted tool use.
 
 - BS Computer Engineering  
 - MS Computer Science  
