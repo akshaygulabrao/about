@@ -13,5 +13,4 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 
 ## Blog
 - [Domain Specific Speech Recognition](./voice_fake.html)
-- [I'm a mediocre writer](./identity.html)
 - [Why I'm switching from AI to Nursing](./nursing.html)
