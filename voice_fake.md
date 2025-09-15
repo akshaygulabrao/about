@@ -2,7 +2,7 @@
 
 Akshay Gulabrao 13 September 2025
 
-# introduction to the world of voice synthesis
+# Voice Conversion
 
 *This is not a serious introduction to voice synthesis. This is my attempt to become familiar with the field.*
 
@@ -10,7 +10,9 @@ Voice synthesis refers to the deep learning task of converting one voice speakin
 
 Reading the introduction to they paper, the papers they cite mainly involve TTS speech synthesis, however, I'm mainly interested in speech to speech synthesis. An arxive search of speech synthesis yielded the interesting paper by Quamer et al. [^2] The author uses the CommonVoice dataset.[^3]
 
-Another interesting paper that I found by Luo et al. innovates on a codec framework with a subspace orthogonal projection module that splits the input into 2 subspaces where 1 correlates to speech and another correlates to the background. 
+Another interesting paper that I found by Luo et al. innovates on a codec framework with a subspace orthogonal projection module that splits the input into 2 subspaces where 1 correlates to speech and another correlates to the background. [^4] [^5] [^6] [^7]
+
+A mel spectogram is the frequency content of a sound signal, compressed by human hearing limits. 
 
 
 ## Blog
@@ -25,5 +27,7 @@ Downloaded Common Voice and started drafting the intro. Parsing is still in prog
 [^1]: Azzuni et al. [Voice Cloning: A Comprehensive Survey.](https://arxiv.org/pdf/2505.00579) 2025. arxiv. 
 [^2]: Quamer et al. [DarkStream: real-time speech anonymization with low latency](https://arxiv.org/pdf/2509.04667) 2025. arxiv.
 [^3]: Ardila, R., Branson, M., Davis, K., Henretty, M., Kohler, M., Meyer, J., Morais, R., Saunders, L., Tyers, F. M. and Weber, G. (2020) [Common Voice: A Massively-Multilingual Speech Corpus](https://arxiv.org/pdf/1912.06670). Proceedings of the 12th Conference on Language Resources and Evaluation (LREC 2020). pp. 4211—4215
-[^4]: Wenhan Yao, Fen Xiao, Xiarun Chen, Jia Liu, YongQiang He, Weiping Wen. [Pureformer-VC: Non-parallel Voice Conversion with Pure Stylized Transformer Blocks and Triplet Discriminative Training](https://arxiv.org/pdf/2506.08348). IJCNN2025.
-[^5]: [babyvedat/VCTK](https://huggingface.co/datasets/badayvedat/VCTK)
+[^4]: [Wenhan Yao, Fen Xiao, Xiarun Chen, Jia Liu, YongQiang He, Weiping Wen. Pureformer-VC: Non-parallel Voice Conversion with Pure Stylized Transformer Blocks and Triplet Discriminative Training](https://arxiv.org/pdf/2506.08348)
+[^5]: [babyvedat VCTK](https://huggingface.co/datasets/badayvedat/VCTK)
+[^6]: [Hirokazu Kameoka, Takuhiro Kaneko, Kou Tanaka, Yuto Kondo. LatentVoiceGrad: Nonparallel Voice Conversion with Latent Diffusion/Flow-Matching Models](https://arxiv.org/abs/2509.08379)
+[^7]: [Xiaoxue Luo, Jinwei Huang, Runyan Yang, Yingying Gao, Junlan Feng, Chao Deng, Shilei Zhang. DeCodec: Rethinking Audio Codecs as Universal Disentangled Representation Learners](https://arxiv.org/pdf/2509.09201)
