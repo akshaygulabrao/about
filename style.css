@@ -3,3 +3,7 @@ body{
   max-width:80ch;
   margin:auto;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}

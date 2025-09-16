@@ -1,6 +1,7 @@
+
 # Akshay Gulabrao
 
-Becoming a nurse because deep learning is hard to monetize. Ex-computer Vision Engineer with extensive experience in machine learning, web scraping, and AI-assisted tool use.
+Becoming a nurse because deep learning is hard to monetize. Ex-computer Vision Engineer with experience in machine learning, web scraping, and AI-assisted tool use.
 
 - BS Computer Engineering  
 - MS Computer Science  
@@ -12,5 +13,15 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 ---
 
 ## Blog
-- [Domain Specific Speech Recognition](./voice_fake.html)
 - [Why I'm switching from AI to Nursing](./nursing.html)
+
+## Biotech Price Targets
+- [ABVX: Abivax Pharmaceuticals](./abvx.html)
+
+## Domain Specific Speech Recognition
+- [Domain Specific Speech Recognition](./voice_fake.html)
+
+## Horrible Startups
+*Novel ideas I thought I had, but aren't *
+
+- [A tax-filing python application?](./tax-form-automation.html)

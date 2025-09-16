@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>voice_fake</title>
+  <meta name="author" content="Akshay Gulabrao" />
+  <title>Voice Conversion</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -20,92 +21,113 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<header id="title-block-header">
+<h1 class="title">Voice Conversion</h1>
+<p class="author">Akshay Gulabrao</p>
+<p class="date">2025-September-16</p>
+</header>
 <p><a href="./index.html">Home</a></p>
-<p>Akshay Gulabrao 13 September 2025</p>
-<h1 id="voice-conversion">Voice Conversion</h1>
-<p><em>This is not a serious introduction to voice synthesis. This is my
-attempt to become familiar with the field.</em></p>
+<p>This is not a serious introduction to voice synthesis. This is my
+attempt to become familiar with the field.</p>
 <p>Voice synthesis refers to the deep learning task of converting one
 voice speaking a specific utterance to a different voice. It is
 significantly easier than face generation because the data has far lower
 dimensionality. Azzuni et al. published a comprehensive survey of voice
-cloning, so I will begin there. <a href="#fn1" class="footnote-ref"
-id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>Reading the introduction to they paper, the papers they cite mainly
-involve TTS speech synthesis, however, I’m mainly interested in speech
-to speech synthesis. An arxive search of speech synthesis yielded the
-interesting paper by Quamer et al. <a href="#fn2" class="footnote-ref"
-id="fnref2" role="doc-noteref"><sup>2</sup></a> The author uses the
-CommonVoice dataset.<a href="#fn3" class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></p>
+cloning, so I will begin there <span class="citation"
+data-cites="azzuni2025voicecloning">(<a
+href="#ref-azzuni2025voicecloning" role="doc-biblioref">Azzuni
+2025</a>)</span>.</p>
+<p>Reading the introduction to their paper, the papers they cite mainly
+involve TTS speech synthesis; however, I’m mainly interested in
+speech-to-speech synthesis. An arXiv search of speech synthesis yielded
+the interesting paper by Quamer et al. <span class="citation"
+data-cites="quamer2025darkstream">(<a href="#ref-quamer2025darkstream"
+role="doc-biblioref">Quamer 2025</a>)</span>. The author uses the
+CommonVoice dataset <span class="citation"
+data-cites="ardila2020commonvoice">(<a href="#ref-ardila2020commonvoice"
+role="doc-biblioref">Ardila et al. 2020</a>)</span>.</p>
 <p>Another interesting paper that I found by Luo et al. innovates on a
 codec framework with a subspace orthogonal projection module that splits
-the input into 2 subspaces where 1 correlates to speech and another
-correlates to the background. <a href="#fn4" class="footnote-ref"
-id="fnref4" role="doc-noteref"><sup>4</sup></a> <a href="#fn5"
-class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> <a
-href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a> <a href="#fn7" class="footnote-ref"
-id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
-<p>A mel spectogram is the frequency content of a sound signal,
-compressed by human hearing limits.</p>
-<h2 id="blog">Blog</h2>
-<p><strong>September 14, 2025</strong> Downloading and indexing the Open
-Voice dataset was extremely slow—listing all ~2.5 million clips took
-over 30 minutes. Since clips are processed alphabetically, I used the
-first digit of the clip name as a rough progress indicator. The dataset
-only advertises clip count, not size or download time, which makes
-planning difficult. I ended up switching to a smaller dataset due to
-resource constraints. I plan to publish a preprocessed version on
-Hugging Face to make it easier for others to use.</p>
-<p><strong>September 13, 2025</strong> Downloaded Common Voice and
-started drafting the intro. Parsing is still in progress. I’ve been
-exploring Tinygrad as a core framework, possibly using PyTorch for
-utilities. I might build a small wrapper library around Tinygrad to
-streamline experimentation.</p>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Azzuni et al. <a
-href="https://arxiv.org/pdf/2505.00579">Voice Cloning: A Comprehensive
-Survey.</a> 2025. arxiv.<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Quamer et al. <a
-href="https://arxiv.org/pdf/2509.04667">DarkStream: real-time speech
-anonymization with low latency</a> 2025. arxiv.<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Ardila, R., Branson, M., Davis, K., Henretty, M.,
-Kohler, M., Meyer, J., Morais, R., Saunders, L., Tyers, F. M. and Weber,
-G. (2020) <a href="https://arxiv.org/pdf/1912.06670">Common Voice: A
-Massively-Multilingual Speech Corpus</a>. Proceedings of the 12th
-Conference on Language Resources and Evaluation (LREC 2020).
-pp. 4211—4215<a href="#fnref3" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p><a href="https://arxiv.org/pdf/2506.08348">Wenhan Yao,
-Fen Xiao, Xiarun Chen, Jia Liu, YongQiang He, Weiping Wen.
-Pureformer-VC: Non-parallel Voice Conversion with Pure Stylized
-Transformer Blocks and Triplet Discriminative Training</a><a
-href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p><a
-href="https://huggingface.co/datasets/badayvedat/VCTK">babyvedat
-VCTK</a><a href="#fnref5" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p><a href="https://arxiv.org/abs/2509.08379">Hirokazu
-Kameoka, Takuhiro Kaneko, Kou Tanaka, Yuto Kondo. LatentVoiceGrad:
-Nonparallel Voice Conversion with Latent Diffusion/Flow-Matching
-Models</a><a href="#fnref6" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p><a href="https://arxiv.org/pdf/2509.09201">Xiaoxue Luo,
-Jinwei Huang, Runyan Yang, Yingying Gao, Junlan Feng, Chao Deng, Shilei
-Zhang. DeCodec: Rethinking Audio Codecs as Universal Disentangled
-Representation Learners</a><a href="#fnref7" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
+the input into two subspaces—one correlates to speech and another
+correlates to the background <span class="citation"
+data-cites="luo2025decodec">(<a href="#ref-luo2025decodec"
+role="doc-biblioref">Luo et al. 2025</a>)</span>. See also <span
+class="citation"
+data-cites="yao2025pureformervc babyvedat_vctk kameoka2025latentvoicegrad">(<a
+href="#ref-yao2025pureformervc" role="doc-biblioref">Yao et al.
+2025</a>; <a href="#ref-babyvedat_vctk" role="doc-biblioref">babyvedat,
+n.d.</a>; <a href="#ref-kameoka2025latentvoicegrad"
+role="doc-biblioref">Kameoka et al. 2025</a>)</span>.</p>
+<p>A mel spectrogram is the frequency content of a sound signal,
+compressed by human hearing limits:</p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" role="list">
+<div id="ref-ardila2020commonvoice" class="csl-entry" role="listitem">
+Ardila, R., M. Branson, K. Davis, M. Henretty, M. Kohler, J. Meyer, R.
+Morais, L. Saunders, F. M. Tyers, and G. Weber. 2020. <span>“Common
+Voice: A Massively-Multilingual Speech Corpus.”</span> In
+<em>Proceedings of the 12th Conference on Language Resources and
+Evaluation (LREC 2020)</em>, 4211–15. <a
+href="https://arxiv.org/pdf/1912.06670">https://arxiv.org/pdf/1912.06670</a>.
+</div>
+<div id="ref-azzuni2025voicecloning" class="csl-entry" role="listitem">
+Azzuni, et al. 2025. <span>“Voice Cloning: A Comprehensive
+Survey.”</span> <a
+href="https://arxiv.org/pdf/2505.00579">https://arxiv.org/pdf/2505.00579</a>.
+</div>
+<div id="ref-babyvedat_vctk" class="csl-entry" role="listitem">
+babyvedat. n.d. <span>“VCTK.”</span> Dataset on HuggingFace. <a
+href="https://huggingface.co/datasets/badayvedat/VCTK">https://huggingface.co/datasets/badayvedat/VCTK</a>.
+</div>
+<div id="ref-kameoka2025latentvoicegrad" class="csl-entry"
+role="listitem">
+Kameoka, Hirokazu, Takuhiro Kaneko, Kou Tanaka, and Yuto Kondo. 2025.
+<span>“LatentVoiceGrad: Nonparallel Voice Conversion with Latent
+Diffusion/Flow-Matching Models.”</span> <a
+href="https://arxiv.org/abs/2509.08379">https://arxiv.org/abs/2509.08379</a>.
+</div>
+<div id="ref-luo2025decodec" class="csl-entry" role="listitem">
+Luo, Xiaoxue, Jinwei Huang, Runyan Yang, Yingying Gao, Junlan Feng, Chao
+Deng, and Shilei Zhang. 2025. <span>“DeCodec: Rethinking Audio Codecs as
+Universal Disentangled Representation Learners.”</span> <a
+href="https://arxiv.org/pdf/2509.09201">https://arxiv.org/pdf/2509.09201</a>.
+</div>
+<div id="ref-quamer2025darkstream" class="csl-entry" role="listitem">
+Quamer, et al. 2025. <span>“DarkStream: Real-Time Speech Anonymization
+with Low Latency.”</span> <a
+href="https://arxiv.org/pdf/2509.04667">https://arxiv.org/pdf/2509.04667</a>.
+</div>
+<div id="ref-yao2025pureformervc" class="csl-entry" role="listitem">
+Yao, Wenhan, Fen Xiao, Xiarun Chen, Jia Liu, YongQiang He, and Weiping
+Wen. 2025. <span>“Pureformer-VC: Non-Parallel Voice Conversion with Pure
+Stylized Transformer Blocks and Triplet Discriminative Training.”</span>
+<a
+href="https://arxiv.org/pdf/2506.08348">https://arxiv.org/pdf/2506.08348</a>.
+</div>
+</div>
 </body>
 </html>
