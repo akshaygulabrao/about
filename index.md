@@ -22,6 +22,6 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 - [Domain Specific Speech Recognition](./voice_fake.html)
 
 ## Horrible Startups
-*Novel ideas I thought I had, but aren't *
+*Novel ideas I thought I had, but are bad or not novel*
 
 - [A tax-filing python application?](./tax-form-automation.html)
