@@ -9,7 +9,7 @@ link-citations: true
 [Home](./index.html)
 
 ## Ulcerative Colitis
-The primary endpoint for ulcerative colitis is measured by the following straight form FDA's primary endpoint manual [@UlcerativeColitisClinical2016]:
+The primary endpoint for ulcerative colitis is measured by qualitative symptoms of stool frequency, rectal bleeding, mucosal appearance, and a physician's rating.  [@UlcerativeColitisClinical2016]:
 ![](./media/uc_endpoint.png)
 
 
