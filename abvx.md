@@ -9,6 +9,6 @@ link-citations: true
 [Home](./index.html)
 
 
-Obefazimod started off as an HIV drug and now is an Ulcerative Colitis (UC) drug [@abivax2015] [@tazi2010]. It works by modulating RNA splicing.
+Obefazimod started off as an HIV drug and now is an Ulcerative Colitis (UC) drug [@abivax2015] [@tazi2010]. Then in 2017, it was discovered to have anti-inflammatory properties. [@Chelbi2017]
 
 ## Ulcerative Colitis (UC)
