@@ -9,8 +9,8 @@ link-citations: true
 [Home](./index.html)
 
 ## Ulcerative Colitis
-The primary endpoint for ulcerative colitis is measured by the following:
-![[@UlcerativeColitisClinical2016]](./media/uc_endpoint.png)
+The primary endpoint for ulcerative colitis is measured by the following (straight form FDA's primary endpoint manual [@UlcerativeColitisClinical2016]):
+![](./media/uc_endpoint.png)
 
 
 ## Obefazimod
