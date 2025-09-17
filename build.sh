@@ -13,3 +13,6 @@ git add index.md index.html
 git add voice_fake.md voice_fake.html
 git add abvx.md abvx.html
 git add nursing.md nursing.html
+
+git commit -m "update"
+git push
