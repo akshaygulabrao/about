@@ -16,6 +16,6 @@ Reading the introduction to their paper, the papers they cite mainly involve TTS
 
 Another interesting paper that I found by Luo et al. innovates on a codec framework with a subspace orthogonal projection module that splits the input into two subspaces—one correlates to speech and another correlates to the background [@luo2025decodec]. See also [@yao2025pureformervc; @babyvedat_vctk; @kameoka2025latentvoicegrad].
 
-The VCTK dataset is extremely popular for voice synthesis research. It is a 10GB dataset which contains speech data for 100+ native English speakers with various accents [@yamagishi2019cstr].
+The VCTK dataset is extremely popular for voice synthesis research. It is a 10GB dataset which contains speech data for 100+ native English speakers with various accents [@yamagishi2019cstr]. Let's reproduce WaveNet's performance on VCTK [@oordWaveNetGenerativeModel2016].
 
 ## References
