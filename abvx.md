@@ -26,7 +26,6 @@ Then in another study, they administered the DSS for a total of 60 days. and ran
 Figure 3b shows a control image of the colon and the difference of ABX464 vs the DSS + MC. We see less lesions in 3b. 3cdef shows inflammatory markers for both the MC control and the ABX464 drug.
 
 ![](./media/campos_fig4.png)
-For each of the charts, the x axis is the control of the expression 
-
+4a shows that ABVX works completely identical to control when no DSS is shown. 4b shows the gene expression patterns when DSS is present with the control treatement, showing a wide varianc in the difference of expression during. 4c shows some reversion back to 4a, which is the gene expression when treated with ABVX. The arrow indicates the expression of IL-22, which seems to dampen the intestinal inflammation.
 
 ## References
