@@ -22,6 +22,6 @@ The paper starts by measuring the effectiveness of ABX464 for treating DSS-induc
 ![](./media/campos_fig2.png)
 Then in another study, they administered the DSS for a total of 60 days. and ran 3 groups: ABX64, ABX64 then control, and just control. Figure 2b shows that mice with only MC quickly declined in health.
 
-![alt text](./media/campos_fig3.png)
+![](./media/campos_fig3.png)
 
 ## References
