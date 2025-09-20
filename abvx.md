@@ -22,12 +22,13 @@ The paper starts by measuring the effectiveness of ABX464 for treating DSS-induc
 ![](./media/campos_fig2.png)
 Then in another study, they administered the DSS for a total of 60 days. and ran 3 groups: ABX64, ABX64 then control, and just control. Figure 2b shows that mice with only MC quickly declined in health.
 
-![](./media/campos_fig3.png)
+![](image.png)
 Figure 3b shows a control image of the colon and the difference of ABX464 vs the DSS + MC. We see less lesions in 3b. 3cdef shows inflammatory markers for both the MC control and the ABX464 drug.
 
 ![](./media/campos_fig4.png)
-4a shows that ABVX works completely identical to control when no DSS is shown. 4b shows the gene expression patterns when DSS is present with the control treatement, showing a wide varianc in the difference of expression during. 4c shows some reversion back to 4a, which is the gene expression when treated with ABVX. The arrow indicates the expression of IL-22, which seems to dampen the intestinal inflammation.
+4a shows that ABVX works completely identical to control when no DSS is shown. 4b shows the gene expression patterns when DSS is present with the control treatement, showing a wide varianc in the difference of expression during. 4c shows some reversion back to 4a, which is the gene expression when treated with ABVX. The arrow indicates the expression of IL-22, which seems to dampen the intestinal inflammation when it's expressed.
 
 ![](./media/campos_fig5.png)
+
 
 ## References
