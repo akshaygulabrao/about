@@ -13,9 +13,8 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 ## Databricks
 - [Introduction to Databricks](./databricks.html)
 
-
-## Domain Specific Speech Recognition
-- [Domain Specific Speech Recognition](./voice_fake.html)
+## Blog
+- [Supply Chain Trivia](./supply_chain.html)
 
 ## Horrible Startups
 *Novel ideas I thought I had, but are bad or not novel*
