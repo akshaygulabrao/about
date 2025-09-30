@@ -15,6 +15,7 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 
 ## Blog
 - [Supply Chain Trivia](./supply_chain.html)
+- [Michael Levin is Underrated](./levin.html)
 
 ## Horrible Startups
 *Novel ideas I thought I had, but are bad or not novel*

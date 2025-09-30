@@ -29,6 +29,10 @@ Figure 3b shows a control image of the colon and the difference of ABX464 vs the
 4a shows that ABVX works completely identical to control when no DSS is shown. 4b shows the gene expression patterns when DSS is present with the control treatement, showing a wide varianc in the difference of expression during. 4c shows some reversion back to 4a, which is the gene expression when treated with ABVX. The arrow indicates the expression of IL-22, which seems to dampen the intestinal inflammation when it's expressed.
 
 ![](./media/campos_fig5.png)
-5a 
+Let  
+$F_1 = \{\text{LPS}, \emptyset\}$ (stimulus factor)  
+$F_2 = \{\text{ABX464}, \emptyset\}$ (drug factor).
+
+Experimental conditions = $F_1 \times F_2 = \bigl\{(\text{LPS}, \text{ABX464}),\ (\text{LPS}, \emptyset),\ (\emptyset, \text{ABX464}),\ (\emptyset, \emptyset)\bigr\}$.
 
 ## References
