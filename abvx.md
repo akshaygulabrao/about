@@ -19,7 +19,7 @@ Obefazimod started off as an HIV drug and now is an Ulcerative Colitis (UC) drug
 ![](./media/campos_fig1.png)
 The paper starts by measuring the effectiveness of ABX464 for treating DSS-induced colitis. There 2 variables that they must manage, the ABX464 efficacy, and the efficacy of the DSS. As a result they have 4 total groups consisting of: {(no disease, no drug), (no diesease, drug), (disease, no drug), (disease,drug)}. Figure A describes the administration protocol. They give the drug for 8 days and then wait 3 days before analyzing the results. Figure B measures the relative weight of the mice. We can observe that when DSS is given, the weight begins to decline for the both the metylcellulose control and the ABX464.
 
-![alt text](./media/campos_fig2.png)
+![](./media/campos_fig2.png)
 Then in another study, they administered the DSS for a total of 60 days. and ran 3 groups: ABX64, ABX64 then control, and just control. Figure 2b shows that mice with only MC quickly declined in health.
 
 ![](./media/campos_fig3.png)
