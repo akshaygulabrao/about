@@ -31,10 +31,10 @@ Figure 3b shows a control image of the colon and the difference of ABX464 vs the
 ![](./media/campos_fig5.png)
 
 ### 5a
-Let  
-$F_1 = \{\text{LPS}, \emptyset\}$ (stimulus factor)  
-$F_2 = \{\text{ABX464}, \emptyset\}$ (drug factor).
+There are two distinct variables in this experimental run: the LPS and the drug. So there are 4 groups, (LPS, control) x (ABX464, control). 
 
-Experimental conditions = $F_1 \times F_2 = \bigl\{(\text{LPS}, \text{ABX464}),\ (\text{LPS}, \emptyset),\ (\emptyset, \text{ABX464}),\ (\emptyset, \emptyset)\bigr\}$.
+### 5b
+
+
 
 ## References
