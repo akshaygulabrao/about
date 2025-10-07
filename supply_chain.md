@@ -8,6 +8,7 @@ link-citations: true
 [Home](./index.html)
 
 A KimiK2 prompt suggests the following books:
+
 1. “The Mastery and Uses of Fire in Antiquity” (Rehder)
 2. "Gingery series” in order: charcoal-foundry → lathe → shaper → mill → drill-press
 3. “The Geology of Ore Deposits” (Guilbert & Park)

@@ -31,9 +31,12 @@ Figure 3b shows a control image of the colon and the difference of ABX464 vs the
 ![](./media/campos_fig5.png)
 
 ### 5a
-There are two distinct variables in this experimental run: the LPS and the drug. So there are 4 groups, (LPS, control) x (ABX464, control). 
+There are two distinct variables in this experimental run: the LPS and the drug. So there are 4 groups, (LPS, control) x (ABX464, DMSO (control)).  
 
 ### 5b
+This measures the transcription levels of four inflammation markers: (1) MCP-1, (2) IL-6, (3) TNF-α, (4) IL-10. For MCP-1, we see that the LPS + DMSO steadily rise for both, with the ABX464 lower after 48 hours. For IL-6, We see Similar levels for both. For TNF alpha, we see high levels after 6 hours for both, and negligible for the rest. For IL-10, we see LPS ABX 464 declining after 12 hours.
+
+### 5c
 
 
 
