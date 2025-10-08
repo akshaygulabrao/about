@@ -10,12 +10,7 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 ## Biotech Price Targets
 - [ABVX: Abivax Pharmaceuticals](./abvx.html)
 
-## Databricks
-- [Introduction to Databricks](./databricks.html)
-
 ## Blog
-- [Supply Chain Trivia](./supply_chain.html)
-- [Spending 12 hours improving my resume](./vla.html)
 
 ## Horrible Startups
 *Novel ideas I thought I had, but are bad or not novel*
