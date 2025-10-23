@@ -13,9 +13,3 @@ This website is built with markdown files and a pandoc build script. Most static
 
 ## Blog
 - [It's surprisingly difficult to make a good stock screener](./growth-stock-screener.html)
-
-
-## Horrible Startups
-*Novel ideas I thought I had, but are bad or not novel*
-
-- [A tax-filing python application?](./tax-form-automation.html)
