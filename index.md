@@ -8,9 +8,11 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 ---
 
 ## Biotech Price Targets
-- [ABVX: Abivax Pharmaceuticals](./abvx.html)
+- [ABVX: An Ulcerative Coilitis Drug](./abvx.html)
+- [EQ: Equilibrium](./eq.html)
 
 ## Blog
+
 
 ## Horrible Startups
 *Novel ideas I thought I had, but are bad or not novel*

@@ -29,18 +29,8 @@ Figure 3b shows a control image of the colon and the difference of ABX464 vs the
 4a shows that ABVX works completely identical to control when no DSS is shown. 4b shows the gene expression patterns when DSS is present with the control treatement, showing a wide varianc in the difference of expression during. 4c shows some reversion back to 4a, which is the gene expression when treated with ABVX. The arrow indicates the expression of IL-22, which seems to dampen the intestinal inflammation when it's expressed.
 
 ![](./media/campos_fig5.png)
+There are two distinct variables in this experimental run: the LPS and the drug. So there are 4 groups, (LPS, control) x (ABX464, DMSO (control)).This measures the transcription levels of four inflammation markers: (1) MCP-1, (2) IL-6, (3) TNF-α, (4) IL-10. For MCP-1, we see that the LPS + DMSO steadily rise for both, with the ABX464 lower after 48 hours. For IL-6, We see Similar levels for both. For TNF alpha, we see high levels after 6 hours for both, and negligible for the rest. For IL-10, we see LPS ABX 464 declining after 12 hours.
 
-### 5a
-There are two distinct variables in this experimental run: the LPS and the drug. So there are 4 groups, (LPS, control) x (ABX464, DMSO (control)).  
-
-### 5b
-This measures the transcription levels of four inflammation markers: (1) MCP-1, (2) IL-6, (3) TNF-α, (4) IL-10. For MCP-1, we see that the LPS + DMSO steadily rise for both, with the ABX464 lower after 48 hours. For IL-6, We see Similar levels for both. For TNF alpha, we see high levels after 6 hours for both, and negligible for the rest. For IL-10, we see LPS ABX 464 declining after 12 hours.
-
-MCP-1 is a chemokine that recruits monocytes to sides of inflammation. IL-6 is a pro-inflammatory cytokine that promotes fever and acute-phase responses. Often elevated during infections and inflammatory diseases. 
-
-### 5c
-LPS is lipopolysaccharide, a molecule found on the outer membrane of Gram-negative bacteria. In research, LPS is commonly used as a potent immune stimulant because it binds to Toll-like receptor 4 (TLR4) on immune cells like macrophages. TNF-alpha is a major inflammatory mediator that activates immune cells and can cause tissue damage if uncontrolled. 
-
-
+![](./media/campos_fig6.png)
 
 ## References
