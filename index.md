@@ -12,6 +12,7 @@ Reachable at [aksgula22@gmail.com](mailto:aksgula22@gmail.com).
 - [EQ: Equilibrium](./eq.html)
 
 ## Blog
+- [It's surprisingly difficult to make a good stock screener](./growth-stock-screener.html)
 
 
 ## Horrible Startups
