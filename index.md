@@ -12,4 +12,4 @@ This website is built with markdown files and a pandoc build script. Most static
 - [EQ: Equilibrium](./eq.html)
 
 ## Blog
-- [It's surprisingly difficult to make a good stock screener](./growth-stock-screener.html)
+- [Supply chains that run the world](./growth-stock-screener.html)
