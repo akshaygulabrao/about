@@ -7,7 +7,7 @@
 pandoc index.md -o "index.html" --mathjax --css=style.css -s
 pandoc abvx.md -o abvx.html --mathjax --css=style.css -s --citeproc
 pandoc eq.md -o eq.html --mathjax --css=style.css -s --citeproc
-pandoc growth-stock-screener.md -o growth-stock-screener.md --mathjax --css=style.css -s --citeproc
+pandoc growth-stock-screener.md -o growth-stock-screener.html --mathjax --css=style.css -s --citeproc
 
 
 git add index.md index.html
