@@ -14,6 +14,6 @@ This website is built with markdown files and a pandoc build script. Most static
 - [ABVX ($200 ~mid 2027): ABX464](./abvx.html)
 - [EQ ($20 ~mid 2030): EQ504](./eq.html)
 
-## Blog
-- [Supply chains that run the world](./growth-stock-screener.html)
+## Notes
+- [Supply chains that run the world](./supply-chains.html)
 
