@@ -13,6 +13,7 @@ pandoc growth-stock-screener.md -o growth-stock-screener.html --mathjax --css=st
 git add index.md index.html
 git add abvx.md abvx.html
 git add eq.md eq.html
+git add growth-stock-screener.md growth-stock-screener.html
 
 
 git add build.sh

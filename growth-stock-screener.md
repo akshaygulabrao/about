@@ -22,22 +22,20 @@ Claude Haiku 4.5 organizes this by the following categories:
 - rare & strategic materials
 
 # Energy
-The main materials in the energy sector are:
+The main materials in the energy sector are
+
 - crude oil
 - natural gas
 - coal
 - petroleum products
 
-The materials mainly differ in their main use case. Crude oil after refinement is the main component of gasoline, diesel, jet fuel, and heavy fuel oil. Then its also used for petrochemical feedstocks like plastics, fertilizers, synthetic fibers and solvents.
+Crude oil are hydrocarbons. Hydrocarbons are used for energy because
 
-The biggest category is crude oil. It's technically referred to as petroleum oils. 
+- the C and H bond with oxygen to release lots of energy during combustion
+- relatively little activation energy
 
-## Crude Oil
-Crude-oil is surprisingly diverse. 15 countries account for 86% of them. Format: (Country: oil in us dollars)
+Natural gas is methane CH~4~
 
-## Liquefied Natural Gas
-
-### Exporters
 
 
 # Metals & Ores
