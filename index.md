@@ -8,6 +8,7 @@ This website is built with markdown files and a pandoc build script. Most static
 ---
 
 ## Biotech Price Targets
+- [AVXL: AF710B](./avxl.html)
 - [CAPR: CAP-1002](./capr.html)
 - [SPRB: TA-ERT](./sprb.html)
 - [ABVX: ABX464](./abvx.html)
