@@ -1,7 +1,7 @@
 ---
 title: "Equillium Inc."
 author: "Akshay Gulabrao"
-date : "2025 October 23"
+date : "2025 October 27"
 bibliography: library.bib
 link-citations: true
 ---

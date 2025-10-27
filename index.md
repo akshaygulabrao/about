@@ -10,10 +10,8 @@ This website is built with markdown files and a pandoc build script. Most static
 ## Biotech Price Targets
 - [ABVX: ABX464](./abvx.html)
 - [EQ: EQ504](./eq.html)
+- [CAPR: CAP-1002](./capr.html)
 
 ## Blog
 - [Supply chains that run the world](./growth-stock-screener.html)
 
-## Datasets that I manage
-
-- [Forecasts and NWS Sensor Readings for the entire US]
