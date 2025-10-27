@@ -1,7 +1,7 @@
 ---
 title: "ABVX: ABX464"
 author: "Akshay Gulabrao"
-date : "2025 September 16"
+date : "2025 October 27"
 bibliography: abvx_references.bib
 link-citations: true
 ---
@@ -9,10 +9,6 @@ link-citations: true
 [Home](./index.html)
 
 ---
-
-## Ulcerative Colitis
-The primary endpoint for ulcerative colitis is measured by qualitative symptoms of stool frequency, rectal bleeding, mucosal appearance, and a physician's rating.  [@UlcerativeColitisClinical2016].
-
 
 ## Obefazimod
 
