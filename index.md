@@ -8,8 +8,8 @@ This website is built with markdown files and a pandoc build script. Most static
 ---
 
 ## Biotech Price Targets
-- [ABVX: An Ulcerative Coilitis Drug](./abvx.html)
-- [EQ: Equilibrium](./eq.html)
+- [ABVX: ABX464](./abvx.html)
+- [EQ: EQ504](./eq.html)
 
 ## Blog
 - [Supply chains that run the world](./growth-stock-screener.html)
