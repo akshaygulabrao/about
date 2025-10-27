@@ -1,5 +1,5 @@
 ---
-title: "Equilibrium Inc."
+title: "Equillium Inc."
 author: "Akshay Gulabrao"
 date : "2025 October 23"
 bibliography: library.bib
@@ -7,7 +7,7 @@ link-citations: true
 ---
 [Home](./index.html)
 
-Equilibrium Inc. currently trades at $1.32 as of 2025/10/23. There main drug is EQ504.
+Equillium Inc. currently trades at $1.32 as of 2025/10/23. There main drug is EQ504.
 
 The company seems to have found the underlying mechanism that makes the ABVX drug work. Both companies developed a small molecule that targets the Aryl Hydrocarbon Receptor (AHR) which modulates the intestinal epithelial barrier.
 
