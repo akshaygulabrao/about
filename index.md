@@ -10,9 +10,9 @@ This website is built with markdown files and a pandoc build script. Most static
 ## Biotech Price Targets
 - [AVXL: AF710B](./avxl.html)
 - [CAPR: CAP-1002](./capr.html)
-- [SPRB: TA-ERT](./sprb.html)
-- [ABVX: ABX464](./abvx.html)
-- [EQ: EQ504](./eq.html)
+- [SPRB ($400 ~mid 2027): TA-ERT](./sprb.html)
+- [ABVX ($200 ~mid 2027): ABX464](./abvx.html)
+- [EQ ($20 ~mid 2030): EQ504](./eq.html)
 
 ## Blog
 - [Supply chains that run the world](./growth-stock-screener.html)
