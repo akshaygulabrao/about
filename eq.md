@@ -16,5 +16,3 @@ The company mentions their drug in posters at popular academic conferences:
 - [EQ504: A Novel AhR Agonist That Promotes Immune Tolerance Through Modulating T Cell Function](https://www.equilliumbio.com/technology/Presentations-Technology/Presentations-Details/2025/EQ504-A-Novel-AhR-Agonist-That-Promotes-Immune-Tolerance-Through-Modulating-T-Cell-Function/default.aspx)
 - [EQ504: A Potent Derivative of the AhR Ligand ITE Demonstrates Efficacy in Modulating Inflammation and Promoting Healing in DSS-Colitis](https://www.equilliumbio.com/technology/Presentations-Technology/Presentations-Details/2025/EQ504-A-Potent-Derivative-of-the-AhR-Ligand-ITE-Demonstrates-Efficacy-in-Modulating-Inflammation-and-Promoting-Healing-in-DSS-Colitis/default.aspx)
 - [Potent AhR Agonist EQ504 Facilitates Gut Epithelial Repair in Inflammatory Disease Models](https://www.equilliumbio.com/technology/Presentations-Technology/Presentations-Details/2025/Potent-AhR-Agonist-EQ504-Facilitates-Gut-Epithelial-Repair-in-Inflammatory-Disease-Models/default.aspx)
-
-# References
