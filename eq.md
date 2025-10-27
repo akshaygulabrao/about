@@ -11,6 +11,8 @@ Equilibrium Inc. currently trades at $1.32 as of 2025/10/23. There main drug is 
 
 # Overview
 
-Aryl hydrocarbon receptor (AHR) is a ligand-dependent transcription factor. Activation of AHR is a necessary signaling pahtway for help. TCDD(a toxin) is a harmful continuous signal that disrupts normal cellular functions and causes toxicity. Dietary ligands (from foods) are short-lived, natural compounds. They provide a brief, beneficial pulse of AHR activation that helps maintain gut barrier function and regulate immune cells.[@chenModulatingAHRFunction2023].
+Aryl Hydrocarbon Receptors (AHR) is a ligand-dependent transcription factor that modulates intestinal inflammation and gut health. When there is too much of 2,3,7,8-tetrachlorodibenzo-p-dioxin (TCDD), it stimulates AHR impairing the intestinal epithelial barrier. The impaired epithelial barrier allows foreign molecules inside, stimulating the immune system.
+[@chenModulatingAHRFunction2023].
+
 
 # References
