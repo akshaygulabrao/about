@@ -14,7 +14,7 @@ Aryl Hydrocarbon Receptors (AHR) is a ligand-dependent transcription factor that
 
 The company mentions their drug in posters at popular academic conferences:
 
-![https://s29.q4cdn.com/642306244/files/doc_downloads/2025/05/AAI_2025-Tregs-_JA_page-0001.jpg](eq504_poster1.png)
+![https://s29.q4cdn.com/642306244/files/doc_downloads/2025/05/AAI_2025-Tregs-_JA_page-0001.jpg](./media/eq504_poster1.png)
 
 
 # References
