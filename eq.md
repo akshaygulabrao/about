@@ -9,12 +9,12 @@ link-citations: true
 
 Equilibrium Inc. currently trades at $1.32 as of 2025/10/23. There main drug is EQ504.
 
-Aryl Hydrocarbon Receptors (AHR) is a ligand-dependent transcription factor that modulates intestinal inflammation and gut health. When there is too much of 2,3,7,8-tetrachlorodibenzo-p-dioxin (TCDD), it stimulates AHR impairing the intestinal epithelial barrier. The impaired epithelial barrier allows foreign molecules inside, stimulating the immune system.
-[@chenModulatingAHRFunction2023].
+The company seems to have found the underlying mechanism that makes the ABVX drug work. Both companies developed a small molecule that targets the Aryl Hydrocarbon Receptor (AHR) which modulates the intestinal epithelial barrier.
 
 The company mentions their drug in posters at popular academic conferences:
 
-![https://s29.q4cdn.com/642306244/files/doc_downloads/2025/05/AAI_2025-Tregs-_JA_page-0001.jpg](./media/eq504_poster1.png)
-
+- [EQ504: A Novel AhR Agonist That Promotes Immune Tolerance Through Modulating T Cell Function](https://www.equilliumbio.com/technology/Presentations-Technology/Presentations-Details/2025/EQ504-A-Novel-AhR-Agonist-That-Promotes-Immune-Tolerance-Through-Modulating-T-Cell-Function/default.aspx)
+- [EQ504: A Potent Derivative of the AhR Ligand ITE Demonstrates Efficacy in Modulating Inflammation and Promoting Healing in DSS-Colitis](https://www.equilliumbio.com/technology/Presentations-Technology/Presentations-Details/2025/EQ504-A-Potent-Derivative-of-the-AhR-Ligand-ITE-Demonstrates-Efficacy-in-Modulating-Inflammation-and-Promoting-Healing-in-DSS-Colitis/default.aspx)
+- [Potent AhR Agonist EQ504 Facilitates Gut Epithelial Repair in Inflammatory Disease Models](https://www.equilliumbio.com/technology/Presentations-Technology/Presentations-Details/2025/Potent-AhR-Agonist-EQ504-Facilitates-Gut-Epithelial-Repair-in-Inflammatory-Disease-Models/default.aspx)
 
 # References
