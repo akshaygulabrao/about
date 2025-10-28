@@ -16,6 +16,8 @@ Martin doesn't think the drug works.
 
 Duchenne Muscular Dystrophy is a severe X-linked recessive disorder caused by mutations in the DMD gene, which encodes a structural cytoskeletal protein in muscle cells named **dystrophin**. 
 
+A quick overview on muscle anatomy. Your muscles are a hierarchy of tissues, and at the very bottom is a muscle fiber, which runs along the length of a the entire muscle. 
 ![Source: [OpenStax Anatomy](https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle)](./media/skeletal-muscle-hierarchy.png)
 
+Inside of each muscle fiber, there are segments named sarcomeres. 
 ![Source: [OpenStax Anatomy](https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle)](./media/sarcomere.png)
