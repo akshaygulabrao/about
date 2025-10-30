@@ -16,8 +16,25 @@ Martin doesn't think the drug works.
 
 Duchenne Muscular Dystrophy is a severe X-linked recessive disorder caused by mutations in the DMD gene, which encodes a structural cytoskeletal protein in muscle cells named **dystrophin**. 
 
-A quick overview on muscle anatomy. Your muscles are a hierarchy of tissues, and at the very bottom is a muscle fiber, which runs along the length of a the entire muscle. 
-![Source: [OpenStax Anatomy](https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle)](./media/skeletal-muscle-hierarchy.png)
+There are currently a few drugs approved to treat DMD.
+- Elevidys: distributes a gene to make dystrophin-like protein throughout muscles
+- Emflaza: does not fix dystrophin mutation, but slows the decline in muscle strength by decreasing IL-1,IL-6, and TNF‑α
+- Agamree: slows decline in motor and respiratory function. same result as emflaza, but different moA
+- Duvyzat: inhibits HDAC enzymes
 
-Inside of each muscle fiber, there are segments named sarcomeres. 
-![Source: [OpenStax Anatomy](https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle)](./media/sarcomere.png)
+
+# Elevidys
+
+## Primary Endpoint
+
+[Elevidys Clinical Trial Paper](https://jamanetwork.com/journals/jamaneurology/fullarticle/2767086)
+[Elevidys Clinical Trial Paper 2](https://onlinelibrary.wiley.com/doi/epdf/10.1002/ana.26755)
+
+
+The primary outcome measure was Number of Participants with Adverse Events (AEs). They used 4 people in the study and reported no adverse events. 
+
+## Secondary Endpoint
+
+The change in delandistrogene moxeparvovec dystrophin using western blot, immunofluorescense, and IF PDPF and the 100-meter timed test.
+
+By western blot, 
