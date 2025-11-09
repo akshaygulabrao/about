@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Akshay Gulabrao" />
+  <title>Expected Value of a Mega Millions Ticket in CA</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Expected Value of a Mega Millions Ticket in CA</h1>
+<p class="author">Akshay Gulabrao</p>
+<p class="date">2025 October 27</p>
+</header>
+<p>California hosts 3 main lotteries, Mega Millions, PowerBall, and
+SuperLotto.</p>
+<p>In MegaMillions, each ticket is $5. You pick 5 white balls from 1–70
+plus a single Mega Ball from 1–25. In addition, each ticket comes with
+an integer multiplier of 2,3,4,5, or 10, which multiplies every prize
+except the jackpot by your multiplier.</p>
+<table>
+<thead>
+<tr>
+<th>Matching Numbers</th>
+<th>Odds 1 in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All 5 of 5 and Mega</td>
+<td>290,472,336</td>
+</tr>
+<tr>
+<td>All 5 of 5</td>
+<td>12,629,232</td>
+</tr>
+<tr>
+<td>Any 4 of 5 and Mega</td>
+<td>893,762</td>
+</tr>
+<tr>
+<td>Any 4 of 5</td>
+<td>38,860</td>
+</tr>
+<tr>
+<td>Any 3 of 5 and Mega</td>
+<td>13,966</td>
+</tr>
+<tr>
+<td>Any 3 of 5</td>
+<td>608</td>
+</tr>
+<tr>
+<td>Any 2 of 5 and Mega</td>
+<td>666</td>
+</tr>
+<tr>
+<td>Any 1 of 5 and Mega</td>
+<td>86</td>
+</tr>
+<tr>
+<td>None of 5, only Mega</td>
+<td>36</td>
+</tr>
+<tr>
+<td><strong>Overall odds of winning</strong></td>
+<td><strong>1 in 23.08</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th>Frequency</th>
+<th>Odds 1 in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td>15 of 32</td>
+<td>2.14</td>
+</tr>
+<tr>
+<td>3X</td>
+<td>10 of 32</td>
+<td>3.20</td>
+</tr>
+<tr>
+<td>4X</td>
+<td>4 of 32</td>
+<td>8</td>
+</tr>
+<tr>
+<td>5X</td>
+<td>2 of 32</td>
+<td>16</td>
+</tr>
+<tr>
+<td>10X</td>
+<td>1 of 32</td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a
+href="https://www.calottery.com/en/draw-games/mega-millions#section-content-4-3">California
+Lottery Mega Millions</a></p>
+<h2 id="prizes">Prizes</h2>
+<p>5 numbers + mega: 415,300,000 5 numbers : 3,057,767 4 numbers + mega
+: 20,520 4 numbers: 363 3 numbers + mega: 216 3 numbers: 10 2 #’s mega:
+10 1 # + mega: 6 mega: 5</p>
+<h3 id="expected-value-of-one-ticket">Expected value of one ticket</h3>
+<p>Using the published odds and Megaplier frequencies above, the
+probability of each outcome is simply the reciprocal of its “1 in”
+value. For every non-jackpot prize I take the expected payout over the
+Megaplier distribution (2X 15/32, 3X 10/32, 4X 4/32, 5X 2/32, 10X 1/32).
+Tax assumptions: prizes under $600 remain untaxed per your instruction,
+4-number wins (with or without Mega) follow the standard 24% federal
+withholding, and the 5-number (Match 5) prize faces a 55% effective tax.
+The listed jackpot amount is already net of tax, so I use it as-is. The
+table below shows the conditional expected payout for each match pattern
+(already averaged over the multiplier where applicable) and its
+contribution to the ticket’s expected return.</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 16%" />
+<col style="width: 36%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Outcome</th>
+<th style="text-align: right;">Odds (1 in …)</th>
+<th style="text-align: right;">Expected payout after tax (USD)</th>
+<th style="text-align: right;">EV contribution (USD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 numbers + Mega</td>
+<td style="text-align: right;">290,472,336</td>
+<td style="text-align: right;">415,300,000.00</td>
+<td style="text-align: right;">1.43</td>
+</tr>
+<tr>
+<td>5 numbers</td>
+<td style="text-align: right;">12,629,232</td>
+<td style="text-align: right;">4,127,985.45</td>
+<td style="text-align: right;">0.33</td>
+</tr>
+<tr>
+<td>4 numbers + Mega</td>
+<td style="text-align: right;">893,762</td>
+<td style="text-align: right;">46,785.60</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td>4 numbers</td>
+<td style="text-align: right;">38,860</td>
+<td style="text-align: right;">827.64</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr>
+<td>3 numbers + Mega</td>
+<td style="text-align: right;">13,966</td>
+<td style="text-align: right;">541.08</td>
+<td style="text-align: right;">0.04</td>
+</tr>
+<tr>
+<td>3 numbers</td>
+<td style="text-align: right;">608</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td>2 numbers + Mega</td>
+<td style="text-align: right;">666</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">0.05</td>
+</tr>
+<tr>
+<td>1 number + Mega</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">18.00</td>
+<td style="text-align: right;">0.21</td>
+</tr>
+<tr>
+<td>Only Mega</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">15.00</td>
+<td style="text-align: right;">0.42</td>
+</tr>
+</tbody>
+</table>
+<p>Adding the contributions yields an expected payout of roughly
+<strong>$2.59</strong> per ticket. After subtracting the $5 ticket
+price, the expected value of playing Mega Millions under these
+assumptions is about <strong>−$2.41</strong>.</p>
+<h3 id="calculation-details">Calculation details</h3>
+<p>The “Game Odds” table (<code>lottery_EV.md:13-24</code>) supplies
+every probability via <code>P(outcome) = 1 / (listed odds)</code>. The
+raw prize amounts are the ones you placed just above
+(<code>lottery_EV.md:36-45</code>). All multipliers use the frequencies
+provided in the “Multiplier Odds” table
+(<code>lottery_EV.md:26-32</code>), so
+<code>P(multiplier) = frequency / 32</code>. Below is the step-by-step
+math for each outcome.</p>
+<h4 id="numbers-mega">5 numbers + Mega</h4>
+<ul>
+<li>Probability: <code>1 / 290,472,336</code>.</li>
+<li>Net payout (already post-tax in your source list):
+<code>$415,300,000</code>.</li>
+<li>EV contribution:
+<code>(1 / 290,472,336) × 415,300,000 = $1.4297</code>.</li>
+</ul>
+<h4 id="numbers-match-5">5 numbers (Match 5)</h4>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 26%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th style="text-align: right;">Gross payout (USD)</th>
+<th style="text-align: right;">Tax rate</th>
+<th style="text-align: right;">Net payout (USD)</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td style="text-align: right;">6,115,534</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">2,751,990.30</td>
+<td style="text-align: right;">15/32</td>
+</tr>
+<tr>
+<td>3X</td>
+<td style="text-align: right;">9,173,301</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">4,127,985.45</td>
+<td style="text-align: right;">10/32</td>
+</tr>
+<tr>
+<td>4X</td>
+<td style="text-align: right;">12,231,068</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">5,503,980.60</td>
+<td style="text-align: right;">4/32</td>
+</tr>
+<tr>
+<td>5X</td>
+<td style="text-align: right;">15,288,835</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">6,879,975.75</td>
+<td style="text-align: right;">2/32</td>
+</tr>
+<tr>
+<td>10X</td>
+<td style="text-align: right;">30,577,670</td>
+<td style="text-align: right;">55%</td>
+<td style="text-align: right;">13,759,951.50</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>Weighted expected payout:
+<code>Σ weight × net = $4,127,985.45</code>.<br />
+Probability: <code>1 / 12,629,232</code>.<br />
+Contribution:
+<code>(1 / 12,629,232) × 4,127,985.45 = $0.3269</code>.</p>
+<h4 id="numbers-mega-1">4 numbers + Mega</h4>
+<table>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th style="text-align: right;">Gross payout</th>
+<th style="text-align: right;">Tax rate</th>
+<th style="text-align: right;">Net payout</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td style="text-align: right;">41,040</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">31,190.40</td>
+<td style="text-align: right;">15/32</td>
+</tr>
+<tr>
+<td>3X</td>
+<td style="text-align: right;">61,560</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">46,785.60</td>
+<td style="text-align: right;">10/32</td>
+</tr>
+<tr>
+<td>4X</td>
+<td style="text-align: right;">82,080</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">62,380.80</td>
+<td style="text-align: right;">4/32</td>
+</tr>
+<tr>
+<td>5X</td>
+<td style="text-align: right;">102,600</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">77,976.00</td>
+<td style="text-align: right;">2/32</td>
+</tr>
+<tr>
+<td>10X</td>
+<td style="text-align: right;">205,200</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">155,952.00</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>Weighted expected payout: <code>$46,785.60</code>.<br />
+Probability: <code>1 / 893,762</code>.<br />
+Contribution: <code>$46,785.60 / 893,762 = $0.0523</code>.</p>
+<h4 id="numbers">4 numbers</h4>
+<table>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th style="text-align: right;">Gross payout</th>
+<th style="text-align: right;">Tax rate</th>
+<th style="text-align: right;">Net payout</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td style="text-align: right;">726</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">551.76</td>
+<td style="text-align: right;">15/32</td>
+</tr>
+<tr>
+<td>3X</td>
+<td style="text-align: right;">1,089</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">827.64</td>
+<td style="text-align: right;">10/32</td>
+</tr>
+<tr>
+<td>4X</td>
+<td style="text-align: right;">1,452</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">1,103.52</td>
+<td style="text-align: right;">4/32</td>
+</tr>
+<tr>
+<td>5X</td>
+<td style="text-align: right;">1,815</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">1,379.40</td>
+<td style="text-align: right;">2/32</td>
+</tr>
+<tr>
+<td>10X</td>
+<td style="text-align: right;">3,630</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">2,758.80</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>Weighted expected payout: <code>$827.64</code>.<br />
+Probability: <code>1 / 38,860</code>.<br />
+Contribution: <code>$827.64 / 38,860 = $0.0213</code>.</p>
+<h4 id="numbers-mega-2">3 numbers + Mega</h4>
+<table>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th style="text-align: right;">Gross payout</th>
+<th style="text-align: right;">Tax rate</th>
+<th style="text-align: right;">Net payout</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td style="text-align: right;">432</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">432.00</td>
+<td style="text-align: right;">15/32</td>
+</tr>
+<tr>
+<td>3X</td>
+<td style="text-align: right;">648</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">492.48</td>
+<td style="text-align: right;">10/32</td>
+</tr>
+<tr>
+<td>4X</td>
+<td style="text-align: right;">864</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">656.64</td>
+<td style="text-align: right;">4/32</td>
+</tr>
+<tr>
+<td>5X</td>
+<td style="text-align: right;">1,080</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">820.80</td>
+<td style="text-align: right;">2/32</td>
+</tr>
+<tr>
+<td>10X</td>
+<td style="text-align: right;">2,160</td>
+<td style="text-align: right;">24%</td>
+<td style="text-align: right;">1,641.60</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>Weighted expected payout: <code>$541.08</code>.<br />
+Probability: <code>1 / 13,966</code>.<br />
+Contribution: <code>$541.08 / 13,966 = $0.0387</code>.</p>
+<h4 id="numbers-1">3 numbers</h4>
+<table>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th style="text-align: right;">Gross payout</th>
+<th style="text-align: right;">Tax</th>
+<th style="text-align: right;">Net payout</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">20.00</td>
+<td style="text-align: right;">15/32</td>
+</tr>
+<tr>
+<td>3X</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">10/32</td>
+</tr>
+<tr>
+<td>4X</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">40.00</td>
+<td style="text-align: right;">4/32</td>
+</tr>
+<tr>
+<td>5X</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">50.00</td>
+<td style="text-align: right;">2/32</td>
+</tr>
+<tr>
+<td>10X</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100.00</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>Weighted expected payout: <code>$30.00</code>.<br />
+Probability: <code>1 / 608</code>.<br />
+Contribution: <code>$30.00 / 608 = $0.0493</code>.</p>
+<h4 id="numbers-mega-3">2 numbers + Mega</h4>
+<p>Same multiplier math as “3 numbers,” so the expected payout is
+<code>$30.00</code>.<br />
+Probability: <code>1 / 666</code>.<br />
+Contribution: <code>$30.00 / 666 = $0.0450</code>.</p>
+<h4 id="number-mega">1 number + Mega</h4>
+<table>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th style="text-align: right;">Gross payout</th>
+<th style="text-align: right;">Tax</th>
+<th style="text-align: right;">Net payout</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">12.00</td>
+<td style="text-align: right;">15/32</td>
+</tr>
+<tr>
+<td>3X</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">18.00</td>
+<td style="text-align: right;">10/32</td>
+</tr>
+<tr>
+<td>4X</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">24.00</td>
+<td style="text-align: right;">4/32</td>
+</tr>
+<tr>
+<td>5X</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">2/32</td>
+</tr>
+<tr>
+<td>10X</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">60.00</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>Weighted expected payout: <code>$18.00</code>.<br />
+Probability: <code>1 / 86</code>.<br />
+Contribution: <code>$18.00 / 86 = $0.2093</code>.</p>
+<h4 id="only-mega">Only Mega</h4>
+<table>
+<thead>
+<tr>
+<th>Multiplier</th>
+<th style="text-align: right;">Gross payout</th>
+<th style="text-align: right;">Tax</th>
+<th style="text-align: right;">Net payout</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2X</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">15/32</td>
+</tr>
+<tr>
+<td>3X</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">15.00</td>
+<td style="text-align: right;">10/32</td>
+</tr>
+<tr>
+<td>4X</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">20.00</td>
+<td style="text-align: right;">4/32</td>
+</tr>
+<tr>
+<td>5X</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">25.00</td>
+<td style="text-align: right;">2/32</td>
+</tr>
+<tr>
+<td>10X</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">50.00</td>
+<td style="text-align: right;">1/32</td>
+</tr>
+</tbody>
+</table>
+<p>Weighted expected payout: <code>$15.00</code>.<br />
+Probability: <code>1 / 36</code>.<br />
+Contribution: <code>$15.00 / 36 = $0.4167</code>.</p>
+<p>Summing all nine EV contributions:</p>
+<pre><code>1.4297 + 0.3269 + 0.0523 + 0.0213 + 0.0387 + 0.0493 + 0.0450 + 0.2093 + 0.4167 ≈ 2.59</code></pre>
+<p>That total is the expected payout per ticket. Subtracting the $5
+ticket cost gives the overall expected value:</p>
+<pre><code>2.59 − 5.00 ≈ −2.41</code></pre>
+</body>
+</html>

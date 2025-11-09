@@ -38,3 +38,5 @@ The primary outcome measure was Number of Participants with Adverse Events (AEs)
 The change in delandistrogene moxeparvovec dystrophin using western blot, immunofluorescense, and IF PDPF and the 100-meter timed test.
 
 By western blot, 
+
+# Deramiocel

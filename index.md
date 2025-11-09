@@ -17,3 +17,5 @@ This website is built with markdown files and a pandoc build script. Most static
 ## Notes
 - [Supply chains that run the world](./supply-chains.html)
 
+## Blog
+- [Expected Value of a Lottery Ticket in CA](./lottery_EV.html)
