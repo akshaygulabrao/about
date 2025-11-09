@@ -18,4 +18,5 @@ This website is built with markdown files and a pandoc build script. Most static
 - [Supply chains that run the world](./supply-chains.html)
 
 ## Blog
+- [Biotech Week of Nov 2](./biotech_week_of_nov2.html)
 - [Expected Value of a Lottery Ticket in CA](./lottery_EV.html)
