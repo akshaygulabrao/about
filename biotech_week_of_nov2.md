@@ -10,26 +10,26 @@ link-citations: true
 
 ---
 
-## Overview
+# 3 November 2025
 
-This notebook-style post will collect notable readouts, FDA actions, and financing events for the trading week starting Monday, November 3. I will keep the sections below short and link out to individual company notes (for example, [CAPR](./capr.html)) when deeper context is already written.
+## Prelude Therapeutics(NASDAQ:PRLD)
 
-## Weekly Calendar
+Two novel programs for myeloproliferative neoplasms (MPNs).
+- selective JAK2V617F JH2 inhibitors.
+- CALR-targeted degrader antibody conjugates (DACs)
 
-| Date | Catalyst | Notes |
-|------|----------|-------|
-| Mon Nov 3 | _Placeholder_ | Outline key earnings calls, advisory committee meetings, or conference presentations. |
-| Wed Nov 5 | _Placeholder_ | Jot down midweek clinical updates to watch. |
-| Fri Nov 7 | _Placeholder_ | Summarize option expirations or data drops expected into the close. |
+Market treats them as highly differentiated, first-in-class approaches for the potential to transform MPN treatment. 
 
-## Companies on Deck
+### Context: What are myeloproliferative neoplasms?
 
-- **Late-stage trials**: Draft commentary for the most mature catalysts (e.g., Phase 3 data, HSR expirations).
-- **Small/micro caps**: Capture quick thesis reminders, share counts, and liquidity notes.
-- **Follow-ups**: Link bullet points back to prior writeups once they exist (CAPR, SPRB, etc.).
+- **Big picture**: MPNs are clonal disorders of hematopoietic stem cells where a single mutant progenitor keeps producing too many mature myeloid cells (red cells, platelets, or granulocytes). The cells still differentiate, so the disease looks “proliferative” rather than “blastic” like acute leukemia.
+- **Canonical subtypes**: Polycythemia vera (PV) causes erythrocytosis, essential thrombocythemia (ET) drives thrombocytosis, and primary myelofibrosis (PMF) scars the marrow so blood formation shifts to the spleen/liver. Chronic myeloid leukemia is technically an MPN but is typically discussed separately because of BCR–ABL.
+- **Molecular drivers**: ~95% of PV and ~60% of ET/PMF cases harbor the JAK2 V617F mutation; others have MPL (thrombopoietin receptor) or calreticulin (CALR) mutations. All of these keep the JAK–STAT pathway switched on without cytokine ligand binding.
+- **Clinical issues**: PV/ET patients face thrombosis and microvascular symptoms from thick, hypercellular blood. PMF patients develop anemia, splenomegaly, constitutional symptoms, and can progress to acute myeloid leukemia in ~10–20% of cases.
+- **Current therapy**: Phlebotomy, hydroxyurea, pegylated interferon, and JAK inhibitors (ruxolitinib, fedratinib, momelotinib) temper counts and cytokine signaling but rarely clear the malignant clone.
+- **Primary endpoints in trials**: PV/ET programs usually target composite endpoints like complete hematologic response (hematocrit <45% without phlebotomy, platelets <400k, leukocytes <10k) plus thrombosis-free survival. PMF studies rely on >=35% spleen volume reduction (SVR35) by MRI/CT at week 24 and >=50% improvement in Total Symptom Score (TSS) using the Myelofibrosis Symptom Assessment Form.
 
-## Notes To Add
+Prelude’s selective JAK2 JH2 inhibitors and CALR-targeted degraders attempt to shut off these mutant circuits more precisely than today’s nonselective JAK blockers, which is why the street views them as potential first-in-class assets.
 
-- Valuation snapshot template (EV, cash, burn, runway).
-- Standard language on macro drivers (rates, risk appetite) for the start of the week.
-- Reminder to revisit watchlist after each close and append any after-hours news.
+## Terns Pharmaceuticals(NASDAQ:TERN)
+
