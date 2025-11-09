@@ -1,7 +1,7 @@
 ---
 title: "Expected Value of a Mega Millions Ticket in CA"
 author: "Akshay Gulabrao"
-date : "2025 October 27"
+date : "2025 November 9"
 bibliography: library.bib
 link-citations: true
 ---
