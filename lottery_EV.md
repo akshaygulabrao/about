@@ -5,7 +5,9 @@ date : "2025 November 9"
 bibliography: library.bib
 link-citations: true
 ---
+[Home](./index.html)
 
+---
 California hosts 3 main lotteries, Mega Millions, PowerBall, and SuperLotto. 
 
 In MegaMillions, each ticket is $5. You pick 5 white balls from 1–70 plus a single Mega Ball from 1–25. In addition, each ticket comes with an integer multiplier of 2,3,4,5, or 10, which multiplies every prize except the jackpot by your multiplier. 
