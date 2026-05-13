@@ -8,6 +8,7 @@ git add supply-chains.md supply-chains.html
 git add lottery_EV.md lottery_EV.html
 
 git add build.sh
+git add CLAUDE.md
 
 git commit -m "update"
 git push
