@@ -1,12 +1,9 @@
 ---
-author: Akshay Gulabrao
-bibliography: library.bib
-date: 2025 October 23
-link-citations: true
-title: Supply Chains that run the world
+title: "Supply Chains that run the world"
+date: 2025-10-23
+draft: false
+tags: ["notes", "economics"]
 ---
-
-[Home](./index.html)
 
 All research starts with a ChatGPT overview, and then you start going down the list of sources. The data I need to collect is
 - the important materials that run the world
@@ -100,4 +97,3 @@ Natural gas is methane CH~4~
 - chromium/ferrochrome
 - manganese
 - titanium
-

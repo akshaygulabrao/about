@@ -1,0 +1,59 @@
+baseURL = "https://akshaygulabrao.github.io/about/"
+languageCode = "en-us"
+title = "Akshay Gulabrao"
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowToc = false
+  disableSpecial1stPost = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Akshay Gulabrao"
+    Content = """
+~~This website is built with markdown files and a pandoc build script. Most static site generators introduce too much complexity. Features that you don't need are a bug, not a bonus.~~
+
+Most programming is done by LLMs now, so the format here defers to whatever makes Claude Code most efficient.
+
+[aksgula22@gmail.com](mailto:aksgula22@gmail.com)
+"""
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:aksgula22@gmail.com"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/akshaygulabrao"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = "github"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 20

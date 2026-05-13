@@ -1,14 +1,11 @@
 ---
 title: "Expected Value of a Mega Millions Ticket in CA"
-author: "Akshay Gulabrao"
-date : "2025 November 9"
-bibliography: library.bib
-link-citations: true
+date: 2025-11-09
+draft: false
+tags: ["math", "probability"]
+math: true
 ---
 
-[Home](./index.html)
-
----
 California hosts 3 main lotteries, Mega Millions, PowerBall, and SuperLotto. 
 
 In MegaMillions, each ticket is $5. You pick 5 white balls from 1–70 plus a single Mega Ball from 1–25. In addition, each ticket comes with an integer multiplier of 2,3,4,5, or 10, which multiplies every prize except the jackpot by your multiplier. 
@@ -49,7 +46,7 @@ mega: 5
 
 ### Expected value of one ticket
 
-Using the published odds and Megaplier frequencies above, the probability of each outcome is simply the reciprocal of its “1 in” value. For every non-jackpot prize I take the expected payout over the Megaplier distribution (2X 15/32, 3X 10/32, 4X 4/32, 5X 2/32, 10X 1/32). Tax assumptions: prizes under $600 remain untaxed per your instruction, 4-number wins (with or without Mega) follow the standard 24% federal withholding, and the 5-number (Match 5) prize faces a 55% effective tax. The listed jackpot amount is already net of tax, so I use it as-is. The table below shows the conditional expected payout for each match pattern (already averaged over the multiplier where applicable) and its contribution to the ticket’s expected return.
+Using the published odds and Megaplier frequencies above, the probability of each outcome is simply the reciprocal of its "1 in" value. For every non-jackpot prize I take the expected payout over the Megaplier distribution (2X 15/32, 3X 10/32, 4X 4/32, 5X 2/32, 10X 1/32). Tax assumptions: prizes under $600 remain untaxed per your instruction, 4-number wins (with or without Mega) follow the standard 24% federal withholding, and the 5-number (Match 5) prize faces a 55% effective tax. The listed jackpot amount is already net of tax, so I use it as-is. The table below shows the conditional expected payout for each match pattern (already averaged over the multiplier where applicable) and its contribution to the ticket's expected return.
 
 | Outcome            | Odds (1 in …) | Expected payout after tax (USD) | EV contribution (USD) |
 |--------------------|--------------:|--------------------------------:|----------------------:|
@@ -67,7 +64,7 @@ Adding the contributions yields an expected payout of roughly **$2.59** per tick
 
 ### Calculation details
 
-The “Game Odds” table (`lottery_EV.md:13-24`) supplies every probability via `P(outcome) = 1 / (listed odds)`. The raw prize amounts are the ones you placed just above (`lottery_EV.md:36-45`). All multipliers use the frequencies provided in the “Multiplier Odds” table (`lottery_EV.md:26-32`), so `P(multiplier) = frequency / 32`. Below is the step-by-step math for each outcome.
+The "Game Odds" table (`lottery_EV.md:13-24`) supplies every probability via `P(outcome) = 1 / (listed odds)`. The raw prize amounts are the ones you placed just above (`lottery_EV.md:36-45`). All multipliers use the frequencies provided in the "Multiplier Odds" table (`lottery_EV.md:26-32`), so `P(multiplier) = frequency / 32`. Below is the step-by-step math for each outcome.
 
 #### 5 numbers + Mega
 - Probability: `1 / 290,472,336`.
@@ -146,7 +143,7 @@ Contribution: `$30.00 / 608 = $0.0493`.
 
 #### 2 numbers + Mega
 
-Same multiplier math as “3 numbers,” so the expected payout is `$30.00`.  
+Same multiplier math as "3 numbers," so the expected payout is `$30.00`.  
 Probability: `1 / 666`.  
 Contribution: `$30.00 / 666 = $0.0450`.
 
