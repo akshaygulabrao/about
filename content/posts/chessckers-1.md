@@ -24,6 +24,11 @@ Files and ranks are 1–8 as in chess, with White starting on ranks 1–2 and Bl
 
 **Black.** 24 single-piece towers, one per square on ranks 6–8: **stones** on ranks 6 and 8, **kings** on rank 7.
 
+<figure style="max-width:420px;margin:1.5em auto">
+  <img src="../../images/chessckers/initial-position.svg" alt="Initial position. White (standard FIDE setup) on ranks 1–2; Black stones on ranks 6 and 8, kings on rank 7. The dashed perimeter is the rim." style="width:100%">
+  <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">Initial position. White on ranks 1–2; Black stones on ranks 6 &amp; 8, kings on rank 7. Dashed perimeter is the rim.</figcaption>
+</figure>
+
 A **tower** is an ordered stack of Black pieces sharing one square. Its **height** \(n\) is the number of pieces. The **top piece** governs the tower's capabilities, and the height \(n\) is both the maximum distance the tower can travel on a non-capturing move and the maximum distance it can scan along a diagonal when looking for capture targets. Every action below either preserves or rearranges towers — Black pieces never exist off-tower.
 
 Distance on the board is Chebyshev: \(\operatorname{dist}(p_1, p_2) = \max(|x_1 - x_2|, |y_1 - y_2|)\). Diagonals and orthogonals both count one square per step.
@@ -44,7 +49,35 @@ Three options, each ends the turn. A quiet move can land on an empty square or a
 
 1. **Diagonal slide.** The whole tower moves up to \(n\) squares along one diagonal. If the top piece is a stone, only forward diagonals (toward rank 1) are legal; if the top piece is a king, any diagonal works.
 
+   <div style="display:grid;grid-template-columns:1fr 1fr;gap:1em;margin:1.5em auto;max-width:560px">
+     <figure style="margin:0">
+       <img src="../../images/chessckers/stone-e6.svg" alt="Height-1 stone on e6 with arrows to d5 and f5" style="width:100%">
+       <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">Height-1 stone on e6: slides one square forward-diagonal to d5 or f5.</figcaption>
+     </figure>
+     <figure style="margin:0">
+       <img src="../../images/chessckers/king-e6.svg" alt="Height-1 king on e6 with arrows to d5, f5, d7, f7" style="width:100%">
+       <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">Height-1 king on e6: any diagonal — d5, f5, d7, f7.</figcaption>
+     </figure>
+     <figure style="margin:0">
+       <img src="../../images/chessckers/stone-king-e6.svg" alt="[stone, king] stack on e6 with arrows to d5, f5, d7, f7 (near) and c4, g4, c8, g8 (far, curved)" style="width:100%">
+       <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">[stone, king] stack on e6 (king on top): up to 2 squares along any diagonal — near (d5/f5/d7/f7) and far (c4/g4/c8/g8).</figcaption>
+     </figure>
+     <figure style="margin:0">
+       <img src="../../images/chessckers/stone-stone-e6.svg" alt="[stone, stone] stack on e6 with forward-diagonal arrows to d5, f5 (near) and c4, g4 (far, curved)" style="width:100%">
+       <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">[stone, stone] stack on e6 (stone on top): forward diagonals only, up to 2 squares — d5/f5 (near) and c4/g4 (far).</figcaption>
+     </figure>
+   </div>
+
 2. **Deploy.** Take the top \(s\) pieces off a tower (\(1 \le s < n\)) and move them as a smaller sub-tower up to \(s\) squares along a diagonal. The remaining \(n - s\) pieces stay put. The sub-tower's top is the same piece that was on top of the original, so the Stone-vs-King direction rule still applies. Deploys are the main mechanism by which Black distributes force across the board.
+
+   <figure style="max-width:680px;margin:1em auto">
+     <div style="display:flex;align-items:center;justify-content:center;gap:0.5em">
+       <img src="../../images/chessckers/deploy-e5-c3.svg" alt="Before: [s, s, s, K] stack on e5 with arrow showing deploy of 2 pieces to c3" style="flex:1;min-width:0;max-width:300px">
+       <span aria-hidden="true" style="font-size:2em;color:#666;line-height:1;flex:0 0 auto">→</span>
+       <img src="../../images/chessckers/deploy-e5-c3-after.svg" alt="After: [s, s] on e5 and [s, k] on c3" style="flex:1;min-width:0;max-width:300px">
+     </div>
+     <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">Deploy <code>e5c3[2]</code>: top 2 pieces [s, k] move 2 squares SW from e5 to c3; [s, s] remain on e5.</figcaption>
+   </figure>
 
 3. **Back rank sprint.** A height-1 stone tower on rank 8 that has never moved may sprint two squares forward-diagonal. The path must be clear. This is structurally analogous to a chess pawn's double move — a one-time speed boost off the starting square. Each stone carries a private `hasMoved` flag that persists when its tower merges into a larger one, so a stone gets exactly one sprint in its lifetime.
 
