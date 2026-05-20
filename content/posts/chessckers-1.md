@@ -35,7 +35,7 @@ Distance on the board is Chebyshev: \(\operatorname{dist}(p_1, p_2) = \max(|x_1 
 
 ## 3. White's moves
 
-White plays standard FIDE chess — same legal moves, same check rules, same castling, same en passant, same pawn promotion. The only modification is the capture effect: **when a White piece captures a Black tower, the entire tower is removed**, regardless of height or composition. There is no partial capture, no skimming the top piece. A pawn that takes a king-topped tower of height 5 wipes all five pieces from the board.
+White plays standard FIDE chess for piece movement — same individual piece moves, same castling, same en passant, same pawn promotion. **Check and checkmate do not apply**: any FIDE-legal piece move is allowed regardless of whether it leaves the king reachable by Black. The king is lost only when actually captured (see §6). The only modification to capture mechanics is: **when a White piece captures a Black tower, the entire tower is removed**, regardless of height or composition. There is no partial capture, no skimming the top piece. A pawn that takes a king-topped tower of height 5 wipes all five pieces from the board.
 
 White also never enters the rim. The rim exists for Black's mechanics only.
 
@@ -144,7 +144,7 @@ Three subtleties worth flagging, because they're easy to get wrong:
 
 **White wins** if Black has no pieces on the board, *or* if Black has no legal moves on their turn. Chessckers does not treat a Black stalemate as a draw — being unable to move loses the game.
 
-**Black wins** by checkmating the White king under standard FIDE rules.
+**Black wins** by capturing the White king. Because hops and charges sweep up every White piece on the path traversed, the king typically falls as a path-capture mid-chain or mid-charge — the §4B chain ending on c3 is exactly this kind of finish. There is no separate checkmate condition.
 
 ## 7. What makes this hard for an engine
 
