@@ -92,6 +92,11 @@ This is the heart of Black's offense.
 
 A **hop** walks along one diagonal, captures every White piece it passes over, and lands somewhere on the same diagonal. A turn can be a single hop or a **chain** — several hops in different directions, glued together by a shared cadence.
 
+<figure style="max-width:560px;margin:1.5em auto">
+  <img src="../../images/chessckers/chain-f6-i3-f0-c3.svg" alt="After 1. h2h4 g7f6 2. a2a4, the [s, K] tower on f6 chains three hops — SE to i3, SW to f0, NW to c3 — capturing pawn h4, knight g1, pawn d2, and the White king on e1" style="width:100%">
+  <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">Worked chain. After <code>1. h2h4 g7f6 2. a2a4</code>, the [s, K] tower on f6 plays <code>f6~i3~f0~c3</code> at cadence 3: SE through h4 (pawn), SW through g1 (knight), NW through e1 (king) and d2 (pawn), landing on c3.</figcaption>
+</figure>
+
 **Single hop.** Pick a diagonal. The tower scans up to \(n\) squares looking for a **first enemy** — the first White piece on the diagonal. (Stone-topped towers only scan forward; king-topped towers scan any direction.) Friendly towers block the scan. If no White piece appears within \(n\) steps, no hop is available in that direction.
 
 Once the first enemy is located at distance \(d\), the player picks a **landing distance** \(k \in [d{+}1,\, n{+}1]\). The tower walks \(k\) steps from its start square. Every White piece on the path at steps \(1, \ldots, k{-}1\) is captured. The first enemy is always among them, because \(k > d\). What happens at step \(k\) depends on what's there:

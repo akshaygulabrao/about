@@ -293,6 +293,31 @@ def deploy_e5_c3_after() -> Position:
     return pos
 
 
+def chain_f6_i3_f0_c3() -> Position:
+    """Position after 1. h2h4 g7f6 2. a2a4. Black plays f6~i3~f0~c3 at cadence 3,
+    capturing pawn h4, knight g1, pawn d2, and the White king on e1."""
+    pos = Position()
+    for f, p in enumerate("RNBQKBNR", start=1):
+        pos.white[(f, 1)] = p
+    for f in range(2, 8):  # b2..g2 (a2 and h2 have advanced)
+        pos.white[(f, 2)] = "P"
+    pos.white[(1, 4)] = "P"  # a4
+    pos.white[(8, 4)] = "P"  # h4
+    for f in range(1, 9):
+        if f == 6:
+            pos.black[(f, 6)] = Tower(["S", "K"])  # post-merge of g7 king onto f6 stone
+        else:
+            pos.black[(f, 6)] = Tower(["S"])
+        if f != 7:  # g7 emptied
+            pos.black[(f, 7)] = Tower(["K"])
+        pos.black[(f, 8)] = Tower(["S"])
+    # Three SE/SW/NW hops, cadence 3.
+    pos.arrows.append(((6, 6), (9, 3), 0, "1"))
+    pos.arrows.append(((9, 3), (6, 0), 0, "2"))
+    pos.arrows.append(((6, 0), (3, 3), 0, "3"))
+    return pos
+
+
 def back_rank_sprint() -> Position:
     """Height-1 stone on e8 (unmoved) sprints 2 squares forward-diagonal to c6 or g6."""
     pos = Position()
@@ -344,6 +369,7 @@ def main() -> None:
     write("deploy-e5-c3", render(deploy_e5_c3()))
     write("deploy-e5-c3-after", render(deploy_e5_c3_after()))
     write("back-rank-sprint", render(back_rank_sprint()))
+    write("chain-f6-i3-f0-c3", render(chain_f6_i3_f0_c3()))
 
 
 if __name__ == "__main__":
