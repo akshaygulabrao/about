@@ -293,6 +293,15 @@ def deploy_e5_c3_after() -> Position:
     return pos
 
 
+def back_rank_sprint() -> Position:
+    """Height-1 stone on e8 (unmoved) sprints 2 squares forward-diagonal to c6 or g6."""
+    pos = Position()
+    pos.black[(5, 8)] = Tower(["S"])
+    pos.arrows.append(((5, 8), (3, 6), 0))  # c6
+    pos.arrows.append(((5, 8), (7, 6), 0))  # g6
+    return pos
+
+
 def stone_stone_e6() -> Position:
     pos = Position()
     pos.black[(5, 6)] = Tower(["S", "S"])
@@ -334,6 +343,7 @@ def main() -> None:
     write("stone-stone-e6", render(stone_stone_e6()))
     write("deploy-e5-c3", render(deploy_e5_c3()))
     write("deploy-e5-c3-after", render(deploy_e5_c3_after()))
+    write("back-rank-sprint", render(back_rank_sprint()))
 
 
 if __name__ == "__main__":

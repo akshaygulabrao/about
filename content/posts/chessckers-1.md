@@ -81,6 +81,11 @@ Three options, each ends the turn. A quiet move can land on an empty square or a
 
 3. **Back rank sprint.** A height-1 stone tower on rank 8 that has never moved may sprint two squares forward-diagonal. The path must be clear. This is structurally analogous to a chess pawn's double move — a one-time speed boost off the starting square. Each stone carries a private `hasMoved` flag that persists when its tower merges into a larger one, so a stone gets exactly one sprint in its lifetime.
 
+   <figure style="max-width:420px;margin:1.5em auto">
+     <img src="../../images/chessckers/back-rank-sprint.svg" alt="Unmoved height-1 stone on e8 sprinting two squares forward-diagonal to c6 or g6" style="width:100%">
+     <figcaption style="font-size:0.85em;text-align:center;margin-top:0.4em;color:#666">Back rank sprint: unmoved stone on e8 jumps two squares forward-diagonal to c6 or g6.</figcaption>
+   </figure>
+
 ### 4B. Diagonal captures: hops and chains
 
 This is the heart of Black's offense.
